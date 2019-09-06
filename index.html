@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
 
-  </body>
+<body>
+  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
+      href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <img src="/" alt="GllacyShop" width="154" height="64">
+      </div>
+      <nav class="header__menu">
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Доставка и рплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">О Компании</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="header__button">
+        <div class="header__search">
+          <button class="search__button"><i class="fas fa-search"></i></button>
+          <form class="search-form">
+            <input class="search-form__input">
+          </form>
+        </div>
+
+        <div class="header__login">
+          <button class="login__button"><i class="fas fa-sign-in-alt"></i></button>
+          <form class="login-form">
+            <input class="login-form__input">
+            <input class="login-form__input">
+            <button class="button login-form__button">Войти</button>
+            <a href="#" class="login-form__link">Забыли пароль?</a>
+            <a href="#" class="login-form__link">Новая регистрация</a>
+          </form>
+        </div>
+
+        <div class="header__basket">
+          <button class="basket__button"><i class="fas fa-shopping-basket"></i></button>
+          <form class="basket-form">
+            <table class="basket-lists">
+              <tr class="basket-lists__item">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="basket-lists__item">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="basket-lists__item">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </section>
+    </div>
+  </header>
+
+</body>
+
 </html>
