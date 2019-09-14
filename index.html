@@ -14,7 +14,7 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__logo">
-        <img src="/" alt="GllacyShop" width="154" height="64">
+        <img src="img/logo.svg" width="154" height="64" alt="Магазин Глейси">
       </div>
       <nav class="header__menu">
         <ul class="main-nav">
@@ -32,13 +32,21 @@
 
       <ul class="header-button">
         <li class="header-button__item button-search">
-          <a href="#" class="header-button__link"></a>
+          <a href="#" class="header-button__link">
+            <img class="button-search__img" src="img/loupe.svg" alt="Поиск">
+          </a>
         </li>
         <li class="header-button__item button-login">
-          <a href="#" class="header-button__link">Вход</a>
+          <a href="#" class="header-button__link">
+            <img class="button-search__img" src="img/entrance.svg" alt="Вход">
+            Вход
+          </a>
         </li>
         <li class="header-button__item button-basket">
-          <a href="#" class="header-button__link">Пусто</a>
+          <a href="#" class="header-button__link">
+            <img class="button-search__img" src="img/basket.svg" alt="Корзина">
+            Пусто
+          </a>
         </li>
       </ul>
 
@@ -113,11 +121,12 @@
           <li class="catalog__item product-item">
             <p class="product-item__image">
               <a class="product-item__link">
-                <img src="#" width="" height="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/ice-cream-1.jpg" width="" height=""
+                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
             </p>
             <p class="product-item__price">
-              <span>310</span> <span>₽/кг</span>
+              <span>310</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
             <h3 class="product-item__title">
               <a href="#" class="product-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -126,11 +135,11 @@
           <li class="catalog__item product-item">
             <p class="product-item__image">
               <a class="product-item__link">
-                <img src="#" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/ice-cream-2.jpg" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
             </p>
             <p class="product-item__price">
-              <span>380</span> <span>₽/кг</span>
+              <span>380</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
             <h3 class="product-item__title">
               <a href="#" class="product-item__link">Сливочно-кофейное с кусочками шоколада</a>
@@ -139,11 +148,12 @@
           <li class="catalog__item product-item">
             <p class="product-item__image">
               <a class="product-item__link">
-                <img src="#" width="" height="" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/ice-cream-3.jpg" width="" height=""
+                  alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
             </p>
             <p class="product-item__price">
-              <span>355</span> <span>₽/кг</span>
+              <span>355</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
             <h3 class="product-item__title">
               <a href="#" class="product-item__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -152,11 +162,11 @@
           <li class="catalog__item product-item">
             <p class="product-item__image">
               <a class="product-item__link">
-                <img src="#" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/ice-cream-4.jpg" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
             </p>
             <p class="product-item__price">
-              <span>415</span> <span>₽/кг</span>
+              <span>415</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
             <h3 class="product-item__title">
               <a href="#" class="product-item__link">Сливочное крем-брюле с карамельной подливкой</a>
@@ -167,34 +177,38 @@
 
       <section class="about-us">
         <div class="about-us__info">
-          <h2 class="about-us__text">
+          <h2 class="about-us__header">
             Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
           </h2>
           <div class="about-us__list">
             <div class="about-us__item">
-              <div class="about-us__item-text">
+              <img src="img/ice-cream.svg" class="about-us__item-img" alt="Мороженое">
+              <p class="about-us__item-text">
                 Все наше мороженое изготавливается на собственном производстве, с
                 использованием современного оборудования и проверенных временем технологий.
-              </div>
+              </p>
             </div>
             <div class="about-us__item">
-              <div class="about-us__item-text">
+              <img src="img/cow.svg" class="about-us__item-img" alt="Корова">
+              <p class="about-us__item-text">
                 Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
                 нас
                 связывает долговременное сотрудничество.
-              </div>
+              </p>
             </div>
             <div class="about-us__item">
-              <div class="about-us__item-text">
+              <img src="img/eco.svg" class="about-us__item-img" alt="Натуральное">
+              <p class="about-us__item-text">
                 Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
                 дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-              </div>
+              </p>
             </div>
             <div class="about-us__item">
-              <div class="about-us__item-text">
+              <img src="img/thermometer.svg" class="about-us__item-img" alt="Натуральное">
+              <p class="about-us__item-text">
                 Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
                 мороженому растаять в пути и позволяет сохранить превосходный вкус.
-              </div>
+              </p>
             </div>
           </div>
         </div>
@@ -231,9 +245,8 @@
 
     <section class="map" id="map">
 
-      <img src="" alt="">
+      <img src="img/map.png" alt="Где мы находимся">
       <!--Картинка карты, пока не умею делать)-->
-
       <div class="map__contact-adress">
         <p class="map__adress">
           Адрес главного офиса
@@ -257,24 +270,24 @@
       <div class="footer-top">
         <div class="footer-social">
           <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-
+            <li class="footer-social__item social-item">
+              <a href="#" class="social-item__link">
+                <img src="img/twitter.svg" alt="Твиттер">
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-
+            <li class="footer-social__item social-item">
+              <a href="#" class="social-item__link">
+                <img src="img/instagram.svg" alt="Инстаграм">
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-
+            <li class="footer-social__item social-item">
+              <a href="#" class="social-item__link">
+                <img src="img/fb.svg" alt="Фейсбук">
               </a>
             </li>
-            <li class="footer-social__item">
-              <a href="#" class="footer-social__link">
-
+            <li class="footer-social__item social-item">
+              <a href="#" class="social-item__link">
+                <img src="img/vk.svg" alt="Вконтакте">
               </a>
             </li>
           </ul>
@@ -285,7 +298,9 @@
         <div class="footer-link">
           <ul class="footer-link__list">
             <li class="footer-link__item">
-              <a href="" class="footer-link__link">Для поставщиков</a>
+              <a href="" class="footer-link__link">
+                Для поставщиков
+              </a>
             </li>
             <li class="footer-link__item">
               <a href="" class="footer-link__link">Наши документы</a>
@@ -302,7 +317,7 @@
 
       <div class="footer-bottom">
         <div class="footer-copiryght">
-          <img src="#" alt="html academy">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html academy">
           <p class="footer-copiryght__text">Сделано в <span>HTML Academy</span> © 2019</p>
         </div>
       </div>
