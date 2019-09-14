@@ -6,7 +6,6 @@
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -32,20 +31,20 @@
       </nav>
 
       <ul class="header-button">
-        <li class="header-button__item header-button__item_search">
+        <li class="header-button__item button-search">
           <a href="#" class="header-button__link"></a>
         </li>
-        <li class="header-button__item header-button__item_login">
-          <a href="#" class="header-button__link"></a>
+        <li class="header-button__item button-login">
+          <a href="#" class="header-button__link">Вход</a>
         </li>
-        <li class="header-button__item header-button__item_basket">
-          <a href="#" class="header-button__link"></a>
+        <li class="header-button__item button-basket">
+          <a href="#" class="header-button__link">Пусто</a>
         </li>
       </ul>
 
       <section class="contact-info">
-
-        <p class="contact-info__time">с 10 до 20:00, ежедневно <span> 812 450 25-25 </span></p>
+        <p class="contact-info__time">с 10 до 20:00, ежедневно <span class="contact-info__tel"> 812 450 25-25 </span>
+        </p>
         <!-- <p class="contact-info__tel"></p> -->
       </section>
     </div>
@@ -109,61 +108,58 @@
       </section>
 
       <section class="catalog catalog-hit">
-
         <h2 class="catalog__title catalog-hidden">Самое популярное мороженое</h2>
-
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <p class="catalog__item-image">
-              <a class="catalog__item-link">
+          <li class="catalog__item product-item">
+            <p class="product-item__image">
+              <a class="product-item__link">
                 <img src="#" width="" height="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
             </p>
-            <p class="catalog__item-price">
+            <p class="product-item__price">
               <span>310</span> <span>₽/кг</span>
             </p>
-            <h3 class="catalig__item-title">
-              <a href="#" class="catalog-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <h3 class="product-item__title">
+              <a href="#" class="product-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h3>
           </li>
-
-          <li class="catalog__item">
-            <p class="catalog__item-image">
-              <a class="catalog__item-link">
+          <li class="catalog__item product-item">
+            <p class="product-item__image">
+              <a class="product-item__link">
                 <img src="#" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
             </p>
-            <p class="catalog__item-price">
+            <p class="product-item__price">
               <span>380</span> <span>₽/кг</span>
             </p>
-            <h3 class="catalig__item-title">
-              <a href="#" class="catalog-item__link">Сливочно-кофейное с кусочками шоколада</a>
+            <h3 class="product-item__title">
+              <a href="#" class="product-item__link">Сливочно-кофейное с кусочками шоколада</a>
             </h3>
           </li>
-          <li class="catalog__item">
-            <p class="catalog__item-image">
-              <a class="catalog__item-link">
+          <li class="catalog__item product-item">
+            <p class="product-item__image">
+              <a class="product-item__link">
                 <img src="#" width="" height="" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
             </p>
-            <p class="catalog__item-price">
+            <p class="product-item__price">
               <span>355</span> <span>₽/кг</span>
             </p>
-            <h3 class="catalig__item-title">
-              <a href="#" class="catalog-item__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <h3 class="product-item__title">
+              <a href="#" class="product-item__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h3>
           </li>
-          <li class="catalog__item">
-            <p class="catalog__item-image">
-              <a class="catalog__item-link">
+          <li class="catalog__item product-item">
+            <p class="product-item__image">
+              <a class="product-item__link">
                 <img src="#" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
             </p>
-            <p class="catalog__item-price">
+            <p class="product-item__price">
               <span>415</span> <span>₽/кг</span>
             </p>
-            <h3 class="catalig__item-title">
-              <a href="#" class="catalog-item__link">Сливочное крем-брюле с карамельной подливкой</a>
+            <h3 class="product-item__title">
+              <a href="#" class="product-item__link">Сливочное крем-брюле с карамельной подливкой</a>
             </h3>
           </li>
         </ul>
@@ -174,7 +170,6 @@
           <h2 class="about-us__text">
             Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
           </h2>
-
           <div class="about-us__list">
             <div class="about-us__item">
               <div class="about-us__item-text">
@@ -236,7 +231,8 @@
 
     <section class="map" id="map">
 
-      <img src="" alt="">  <!--Картинка карты, пока не умею делать)-->
+      <img src="" alt="">
+      <!--Картинка карты, пока не умею делать)-->
 
       <div class="map__contact-adress">
         <p class="map__adress">
@@ -312,7 +308,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
