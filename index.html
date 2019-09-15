@@ -22,7 +22,7 @@
             <a href="catalog.html" class="main-nav__link">Каталог</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Доставка и оплата</a>
+            <a href="#" class="main-nav__link">Доставка и рплата</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">О Компании</a>
@@ -32,17 +32,19 @@
 
       <ul class="header-button">
         <li class="header-button__item button-search">
-          <a href="#" class="button-search__link" aria-label="Поиск по сайту">
-
+          <a href="#" class="button-search__link">
+        
           </a>
         </li>
         <li class="header-button__item button-login">
           <a href="#" class="button-login__link">
+         
             Вход
           </a>
         </li>
         <li class="header-button__item button-basket">
           <a href="#" class="button-basket__link">
+            
             Пусто
           </a>
         </li>
@@ -64,23 +66,22 @@
         </ol>
         <div class="slider__list">
           <div class="slider__item slider__item_active">
-            <img src="#" alt="Мороженное: Крем-брюле и пломбир с малиновым джемом">
-            <p class="slider__text-preview">Крем-брюле и пломбир
+            <img src="#" alt="">
+            <p>Крем-брюле и пломбир
               с малиновым джемом</p>
-            <a href="#" class="button slider__item-button" aria-label="Пломбир с малиновым джемом">Давайте оба!</a>
+            <a href="#" class="button slider__item-button"></a>
           </div>
           <div class="slider__item">
-            <img src="#" alt="Мороженное: Шоколадный пломбир и лимонный сорбет">
-            <p class="slider__text-preview">Шоколадный пломбир
+            <img src="#" alt="">
+            <p>Шоколадный пломбир
               и лимонный сорбет </p>
-            <a href="#" class="button slider__item-button" aria-label="Пломбир и лимонный сорбет">Давайте оба!</a>
+            <a href="#" class="button slider__item-button"></a>
           </div>
           <div class="slider__item">
-            <img src="#" alt="Мороженное: Пломбир с помадкой и клубничный щербет">
-            <p class="slider__text-preview">Пломбир с помадкой
+            <img src="#" alt="">
+            <p>Пломбир с помадкой
               и клубничный щербет</p>
-            <a href="#" class="button slider__item-button" aria-label="Пломбир с помадкой и клубничный щербет">Давайте
-              оба!</a>
+            <a href="#" class="button slider__item-button"></a>
           </div>
         </div>
       </div>
@@ -231,13 +232,10 @@
               происходит.
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <form class="mail-form" action="" method="POST">
-              <div class="mail-form__content">
-                <label for="mail-user-email" class="mail-user__title visually-hidden">Ваша почта</label>
-                <input class="input mail-form__input" type="text" id="mail-user-email" name="email"
-                  placeholder="email@example.com">
-                <button class="button mail-form__button"></button>
-              </div>
+            <form class="mail-form" action="">
+              <!--Bad value for attribute action on element form: Must be non-empty -->
+              <input class="input mail-form__input" type="text">
+              <button class="button mail-form__button"></button>
             </form>
           </section>
         </div>
@@ -245,24 +243,26 @@
     </div>
 
     <section class="map" id="map">
+
       <img src="img/map.png" alt="Мы находимся ул.Большая Конюшенная 19/8, Санкт-Петербург">
       <!--Картинка карты, пока не умею делать)-->
-      <div class="map__contact-adress map-contact-block">
-        <p class="map-contact-block__adress">
+      <div class="map__contact-adress">
+        <p class="map__adress">
           Адрес главного офиса
           и офлайн-магазина:
           <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
         </p>
-        <p class="map-contact-block__tel">
+        <p class="map__contact-tel">
           Для заказов по телефону:
           <span>8 812 450-25-25</span>
           (с 10 до 20 ежедневно)
         </p>
-        <button href="#" class="button map-contact-block__button">Форма обратной связи</button>
       </div>
+
     </section>
 
   </main>
+
 
   <footer class="page-footer">
     <div class="container">
@@ -270,23 +270,23 @@
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item social-item">
-              <a href="#" class="social-item__link" aria-label="Магазин Глейси в твиттере">
-
+              <a href="#" class="social-item__link">
+                Тветтер
               </a>
             </li>
             <li class="footer-social__item social-item">
-              <a href="#" class="social-item__link" aria-label="Магазин Глейси в инстаграмме">
-
+              <a href="#" class="social-item__link">
+                Инстаграм
               </a>
             </li>
             <li class="footer-social__item social-item">
-              <a href="#" class="social-item__link" aria-label="Магазин Глейси в фейсбуке">
-
+              <a href="#" class="social-item__link">
+                Фейсбук
               </a>
             </li>
             <li class="footer-social__item social-item">
-              <a href="#" class="social-item__link" aria-label="Магазин Глейси в Вконтакте">
-
+              <a href="#" class="social-item__link">
+                Вконтакте
               </a>
             </li>
           </ul>
@@ -323,86 +323,7 @@
     </div>
   </footer>
 
-  <section class="search visually-hidden">
-    <form class="search-form" action="#" method="get">
-      <div class="search-form__content">
-        <label for="search-text" class="search-form__title visually-hidden">Поле для поиска на странице</label>
-        <input type="text" name="search" id="search-text" class="search-form__input" placeholder="Крем-брюле">
-      </div>
-    </form>
-  </section>
-
-  <section class="login visually-hidden">
-    <h2 class="login__header visually-hidden">Вход на сайт</h2>
-    <form class="login-form" action="" method="post">
-      <div class="login-form__content">
-        <p>
-          <label for="user-login" class="login-form__title-login visually-hidden">Логин</label>
-          <input type="text" class="login-form__input" id="user-login" name="login" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="user-password" class="login-form__title-login visually-hidden">Пароль</label>
-          <input type="password" class="login-form__input" name="password" id="user-password"
-            aria-label="Введите пароль" placeholder="••••••••">
-        </p>
-        <div>
-          <button class="button login-form__button">Войти</button>
-          <ul class="login-form__list">
-            <li class="login-form__item"><a class="login-form__link" href="#">Забыли пароль?</a></li>
-            <li class="login-form__item"><a class="login-form__link" href="#">Новая регистрация</a></li>
-          </ul>
-        </div>
-      </div>
-    </form>
-  </section>
-
-  <section class="basket visually-hidden">
-    <h2 class="basket__header visually-hidden">Ваша корзина</h2>
-    <form class="backet-form" action="" method="POST">
-      <div class="basket-form__content">
-        <table class="basket-form__list">
-          <tr class="basket-form__item">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="basket-form__item">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-        <div class="basket__price">
-          Итого: 750руб.
-        </div>
-        <button class="button basket__button">Оформить заказ</button>
-      </div>
-    </form>
-  </section>
-
-  <secttion class="feedback visually-hidden">
-    <h2 class="feedback__header visually-hidden">Обратная связь</h2>
-    <form class="feedback-form" action="" method="POST">
-      <div class="feedback-form__content">
-        <p class="feedback-form__text">Мы обязательно вам ответим!</p>
-        <label for="user-name" class="visually-hidden">Ваше имя</label>
-        <input type="text" class="feedback-form__input" name="name" id="user-name" placeholder="Как вас зовут?">
-
-        <label for="user-email" class="visually-hidden">Ваша почта</label>
-        <input type="email" class="feedback-form__input" name="email" id="user-email"
-          placeholder="Ваша почта для ответа?">
-
-        <label for="user-comment" class="visually-hidden">Комментарий</label>
-        <textarea name="comment" id="user-comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="button feedback-form__button">Отправить</button>
-      </div>
-    </form>
-  </secttion>
-
+  
   <script src="js/script.js"></script>
 </body>
 
