@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">
-                <img src="index.html" alt="GllacyShop" width="154" height="64">
+                <img src="index.html" width="154" height="64" alt="Магазин Глейси" >
             </div>
             <nav class="header__menu">
                 <ul class="main-nav">
                     <li class="main-nav__item">
-                        <a href="/" class="main-nav__link">Каталог</a>
+                        <a href="#" class="main-nav__link">Каталог</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Доставка и рплата</a>
+                        <a href="#" class="main-nav__link">Доставка и оплата</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="#" class="main-nav__link">О Компании</a>
@@ -33,7 +33,7 @@
             <ul class="header-button">
                 <li class="header-button__item button-search">
                     <a href="#" class="button-search__link">
-        
+
                     </a>
                 </li>
                 <li class="header-button__item button-login">
@@ -63,54 +63,60 @@
                         href="#">Сливочное</a></li>
             </ul>
             <section class="catalog">
-                <h2 class="catalog__title">Сливочное морожное</h2>
-
+                <h2 class="catalog__header">Сливочное морожное</h2>
                 <section class="catalog__filter">
-                    <form action="" method="GET">
-                        <ul>
-                            <li>
-                                <label for="sort">
-                                    Сортировка:
-                                    <select name="sort" id="sort">
+                    <form class="sort-form" action="" method="GET">
+                        <div class="sort-form__content">
+                            <ul class="sort-form__list">
+                                <li class="sort-form__item">
+                                    <label for="filter-sort">Сортировка:</label>
+                                    <select name="sort" id="filter-sort">
                                         <option value="popularity">по популярности</option>
                                     </select>
-                                </label>
-                            </li>
-                            <li>
-                                <label for="range">
-                                    Цена:
-                                    <input type="range" id="range" min="1" max="500">
-                                </label>
-                            </li>
-                            <li>
-                                <label><input type="radio" id="value-radio-one" name="radio-value" value="a">
-                                    0% </label>
-                                <label><input type="radio" id="value-radio-two" name="radio-value" value="b">
-                                    10%</label>
-                                <label><input type="radio" id="value-radio-three" name="radio-value" value="c"> до
-                                    30%</label>
-                                <label><input type="radio" id="value-radio-four" name="radio-value" value="d">выше
-                                    30%</label>
+                                </li>
+                                <li class="sort-form__item">
+                                    <label for="filter-range">Цена:</label>
+                                    <input type="range" id="filter-range" min="1" max="500">
+                                </li>
+                                <li class="sort-form__item">
+                                    <input type="radio" id="filter-percentage-zero" name="percentage-value" value="a">
+                                    <label for="filter-percentage-zero">0%</label>
 
-                            </li>
-                            <li>
-                                <label><input type="checkbox" id="value-checkbox-one" name="checkbox-value" value="a">
-                                    шоколадные </label>
-                                <!--Обычно, имя поля должно быть уникальным в пределах формы, получается надо переделать? i-->
-                                <label><input type="checkbox" id="value-checkbox-two" name="checkbox-value" value="b">
-                                    сахарные присыпки</label>
-                                <label><input type="checkbox" id="value-checkbox-three" name="checkbox-value" value="c">
-                                    фрукты</label>
-                                <label><input type="checkbox" id="value-checkbox-four" name="checkbox-value"
-                                        value="d">сиропы</label>
-                                <label><input type="checkbox" id="value-checkbox-five" name="checkbox-value"
-                                        value="d">джемы</label>
-                            </li>
-                        </ul>
-                        <button class="">Применить</button>
+                                    <input type="radio" id="filter-percentage-ten" name="percentage-value" value="b">
+                                    <label for="filter-percentage-ten">10%</label>
+
+                                    <input type="radio" id="filter-percentage-up-to-thirty" name="percentage-value"
+                                        value="c">
+                                    <label for="filter-percentage-up-to-thirty">до 30%</label>
+
+                                    <input type="radio" id="filter-percentage-above-thirty" name="percentage-value"
+                                        value="d">
+                                    <label for="filter-percentage-above-thirty">выше 30%</label>
+                                </li>
+                                <li class="sort-form__item">
+                                    <input type="checkbox" id="filter-chocolate-ice-cream" name="chocolate-ice-cream"
+                                        value="a">
+                                    <label for="filter-chocolate-ice-cream">шоколадные</label>
+
+                                    <input type="checkbox" id="filter-sugar-ice-cream" name="sugar-ice-cream" value="b">
+                                    <label for="filter-sugar-ice-cream">сахарные присыпки</label>
+
+                                    <input type="checkbox" id="filter-fruits-ice-cream" name="fruits-ice-cream"
+                                        value="c">
+                                    <label for="filter-fruits-ice-cream">фрукты</label>
+
+                                    <input type="checkbox" id="filter-syrup-ice-cream" name="syrup-ice-cream" value="d">
+                                    <label for="filter-syrup-ice-cream">сиропы</label>
+
+                                    <input type="checkbox" id="filter-jam-ice-cream" name="jam-ice-cream" value="d">
+                                    <label for="filter-jam-ice-cream">джемы</label>
+
+                                </li>
+                            </ul>
+                            <button class="sort-form__button">Применить</button>
+                        </div>
                     </form>
                 </section>
-
 
                 <ul class="catalog__list">
                     <li class="catalog__item product-item">
@@ -291,23 +297,23 @@
                 <div class="footer-social">
                     <ul class="footer-social__list">
                         <li class="footer-social__item social-item">
-                            <a href="#" class="social-item__link">
-                                Тветтер
+                            <a href="#" class="social-item__link" aria-label="Магазин Глейси в твиттере">
+                            
                             </a>
                         </li>
                         <li class="footer-social__item social-item">
-                            <a href="#" class="social-item__link">
-                                Инстаграмм
+                            <a href="#" class="social-item__link" aria-label="Магазин Глейси в инстаграмме">
+                           
                             </a>
                         </li>
                         <li class="footer-social__item social-item">
-                            <a href="#" class="social-item__link">
-                                Фейсбук
+                            <a href="#" class="social-item__link" aria-label="Магазин Глейси в фейсбуке">
+                            
                             </a>
                         </li>
                         <li class="footer-social__item social-item">
-                            <a href="#" class="social-item__link">
-                                Вконтакте
+                            <a href="#" class="social-item__link" aria-label="Магазин Глейси в Вконтакте">
+                               
                             </a>
                         </li>
                     </ul>
