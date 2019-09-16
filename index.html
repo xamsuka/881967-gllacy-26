@@ -49,7 +49,7 @@
       </ul>
 
       <section class="contact-info">
-        <p class="contact-info__time">с 10 до 20:00, ежедневно <span class="contact-info__tel"> 812 450 25-25 </span>
+        <p class="contact-info__time">с 10 до 20:00, ежедневно <a href="tel:+78124502525" class="contact-info__tel"> 812 450 25-25 </a>
         </p>
       </section>
     </div>
@@ -231,12 +231,12 @@
               происходит.
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <form class="mail-form" action="" method="POST">
+            <form class="mail-form" action="#" method="POST">
               <div class="mail-form__content">
                 <label for="mail-user-email" class="mail-user__title visually-hidden">Ваша почта</label>
                 <input class="input mail-form__input" type="text" id="mail-user-email" name="email"
                   placeholder="email@example.com">
-                <button class="button mail-form__button"></button>
+                <button type="submit" class="button mail-form__button">Отправить</button>
               </div>
             </form>
           </section>
@@ -247,8 +247,8 @@
     <section class="map" id="map">
       <img src="img/map.png" alt="Мы находимся ул.Большая Конюшенная 19/8, Санкт-Петербург">
       <!--Картинка карты, пока не умею делать)-->
-      <div class="map__contact-adress map-contact-block">
-        <p class="map-contact-block__adress">
+      <div class="map__contact-address map-contact-block">
+        <p class="map-contact-block__address">
           Адрес главного офиса
           и офлайн-магазина:
           <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
@@ -324,6 +324,7 @@
   </footer>
 
   <section class="search visually-hidden">
+    <h2 class="search__header visually-hidden">Поиск по сайту</h2>
     <form class="search-form" action="#" method="get">
       <div class="search-form__content">
         <label for="search-text" class="search-form__title visually-hidden">Поле для поиска на странице</label>
@@ -334,7 +335,7 @@
 
   <section class="login visually-hidden">
     <h2 class="login__header visually-hidden">Вход на сайт</h2>
-    <form class="login-form" action="" method="post">
+    <form class="login-form" action="#" method="post">
       <div class="login-form__content">
         <p>
           <label for="user-login" class="login-form__title-login visually-hidden">Логин</label>
@@ -358,7 +359,7 @@
 
   <section class="basket visually-hidden">
     <h2 class="basket__header visually-hidden">Ваша корзина</h2>
-    <form class="backet-form" action="" method="POST">
+    <form class="backet-form" action="#" method="POST">
       <div class="basket-form__content">
         <table class="basket-form__list">
           <tr class="basket-form__item">
@@ -386,7 +387,7 @@
 
   <secttion class="feedback visually-hidden">
     <h2 class="feedback__header visually-hidden">Обратная связь</h2>
-    <form class="feedback-form" action="" method="POST">
+    <form class="feedback-form" action="#" method="POST">
       <div class="feedback-form__content">
         <p class="feedback-form__text">Мы обязательно вам ответим!</p>
         <label for="user-name" class="visually-hidden">Ваше имя</label>
@@ -398,7 +399,7 @@
 
         <label for="user-comment" class="visually-hidden">Комментарий</label>
         <textarea name="comment" id="user-comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="button feedback-form__button">Отправить</button>
+        <button type="submit" class="button feedback-form__button">Отправить</button>
       </div>
     </form>
   </secttion>
