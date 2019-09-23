@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .visually-hidden {
@@ -30,8 +31,20 @@ a {
     line-height: 24px;
     color: inherit;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-    background-color: #e84d37;
+    background-color: #ffffff;
     background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.button:hover, .button:focus {
+    box-shadow: 0 2px 2px #ac1000;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.button:active {
+    box-shadow: inset 0 2px 2px #942718;
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
 button.button {
@@ -55,6 +68,7 @@ button.button {
 
 .main-nav a, .header-button a {
     color: #ffffff;
+    text-decoration: underline;
 }
 
 .contact-info__time {
@@ -296,9 +310,16 @@ button.button {
     height: 38px;
 }
 
+.social-item {
+    
+}
+
 .footer-link__list {
     display: flex;
     list-style: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
 }
 
 .footer-link__list a {
@@ -306,13 +327,53 @@ button.button {
     text-decoration: underline;
 }
 
-.pagination-list,
+.footer-copyright__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
 .breadcrumbs {
     display: flex;
+    padding: 0;
     list-style: none;
 }
 
-.pagination-list__item a,
 .breadcrumbs a {
     color: #ffffff;
+}
+
+.breadcrumbs__item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.breadcrumbs li:not(.site-navigation-current) a {
+    text-decoration: underline;
+}
+
+.catalog__header {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pagination-list__item a {
+    color: #ffffff;
+}
+
+.sort-form__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
