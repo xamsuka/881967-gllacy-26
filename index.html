@@ -13,50 +13,53 @@
   <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
   <header class="header">
-    <div class="container header__container">
-      <div class="header__logo">
-        <img src="img/logo.svg" width="154" height="64" alt="Магазин Глейси">
-      </div>
-      <nav class="header__menu">
-        <ul class="main-nav">
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Каталог</a>
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="img/logo.svg" width="154" height="64" alt="Магазин Глейси">
+        </div>
+        <nav class="header__menu">
+          <ul class="main-nav">
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Доставка и оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">О Компании</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-button">
+          <li class="header-button__item button-search">
+            <a href="#" class="button-search__link" aria-label="Поиск по сайту">
+
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Доставка и оплата</a>
+          <li class="header-button__item button-login">
+            <a href="#" class="button-login__link">
+              Вход
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">О Компании</a>
+          <li class="header-button__item button-basket">
+            <a href="#" class="button-basket__link">
+              Пусто
+            </a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="header-button">
-        <li class="header-button__item button-search">
-          <a href="#" class="button-search__link" aria-label="Поиск по сайту">
-
-          </a>
-        </li>
-        <li class="header-button__item button-login">
-          <a href="#" class="button-login__link">
-            Вход
-          </a>
-        </li>
-        <li class="header-button__item button-basket">
-          <a href="#" class="button-basket__link">
-            Пусто
-          </a>
-        </li>
-      </ul> 
+      </div>
+      <section class="contact-info">
+        <p class="contact-info__time">с 10 до 20:00, ежедневно <a href="tel:+78124502525" class="contact-info__tel"> 812
+            450 25-25 </a>
+        </p>
+      </section>
     </div>
-    <section class="contact-info">
-      <p class="contact-info__time">с 10 до 20:00, ежедневно <a href="tel:+78124502525" class="contact-info__tel"> 812 450 25-25 </a>
-      </p>
-    </section>
   </header>
   <main>
     <div class="container">
-      <div id="slider" class="slider">
+      <div id="slider" class="slider visually-hidden">
         <ol class="slider__indicators">
           <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
           <li class="slider__indicator" data-slide-to="1"></li>
@@ -94,7 +97,7 @@
             <p class="banners__text">
               При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a href="" class="button baners__button">
+            <a href="#" class="button baners__button">
               Хочу варенье!
             </a>
           </div>
@@ -106,7 +109,7 @@
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
               бесплатно.
             </p>
-            <a href="" class="button baners__button">
+            <a href="#" class="button baners__button">
               Хочу шоколадки!
             </a>
           </div>
@@ -114,15 +117,15 @@
       </section>
 
       <section class="catalog catalog-hit">
-        <h2 class="catalog__title catalog-hidden">Самое популярное мороженое</h2>
+        <h2 class="catalog__title visually-hidden">Самое популярное мороженое</h2>
         <ul class="catalog__list">
           <li class="catalog__item product-item">
-            <p class="product-item__image">
+            <div class="product-item__image">
               <a class="product-item__link">
                 <img src="img/ice-cream-1.jpg" width="" height=""
                   alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
-            </p>
+            </div>
             <p class="product-item__price">
               <span>310</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
@@ -131,11 +134,11 @@
             </h3>
           </li>
           <li class="catalog__item product-item">
-            <p class="product-item__image">
+            <div class="product-item__image">
               <a class="product-item__link">
                 <img src="img/ice-cream-2.jpg" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
-            </p>
+            </div>
             <p class="product-item__price">
               <span>380</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
@@ -144,12 +147,12 @@
             </h3>
           </li>
           <li class="catalog__item product-item">
-            <p class="product-item__image">
+            <div class="product-item__image">
               <a class="product-item__link">
                 <img src="img/ice-cream-3.jpg" width="" height=""
                   alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
-            </p>
+            </div>
             <p class="product-item__price">
               <span>355</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
@@ -158,11 +161,11 @@
             </h3>
           </li>
           <li class="catalog__item product-item">
-            <p class="product-item__image">
+            <div class="product-item__image">
               <a class="product-item__link">
                 <img src="img/ice-cream-4.jpg" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
-            </p>
+            </div>
             <p class="product-item__price">
               <span>415</span><img src="img/ruble.svg" alt="Рубль"><span>/кг</span>
             </p>
@@ -212,7 +215,7 @@
         </div>
       </section>
 
-      <article>
+      <article class="news-mailing">
         <div class="news-blog">
           <div class="news">
             <p class="news__text">
@@ -226,19 +229,21 @@
           </div>
 
           <section class="mail">
-            <p class="mail__text">
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
-              происходит.
-              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="mail-form" action="#" method="POST">
-              <div class="mail-form__content">
-                <label for="mail-user-email" class="mail-user__title visually-hidden">Ваша почта</label>
-                <input class="input mail-form__input" type="text" id="mail-user-email" name="email"
-                  placeholder="email@example.com">
-                <button type="submit" class="button mail-form__button">Отправить</button>
-              </div>
-            </form>
+            <div class="mail__content">
+              <p class="mail__text">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+                происходит.
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form class="mail-form" action="#" method="POST">
+                <div class="mail-form__content">
+                  <label for="mail-user-email" class="mail-user__title visually-hidden">Ваша почта</label>
+                  <input class="input mail-form__input" type="text" id="mail-user-email" name="email"
+                    placeholder="email@example.com">
+                  <button type="submit" class="button mail-form__button">Отправить</button>
+                </div>
+              </form>
+            </div>
           </section>
         </div>
       </article>
@@ -269,22 +274,22 @@
       <div class="footer-top">
         <div class="footer-social">
           <ul class="footer-social__list">
-            <li class="footer-social__item social-item">
+            <li class="footer-social__item social-tw">
               <a href="#" class="social-item__link" aria-label="Магазин Глейси в твиттере">
-
+                
               </a>
             </li>
-            <li class="footer-social__item social-item">
+            <li class="footer-social__item social-inst">
               <a href="#" class="social-item__link" aria-label="Магазин Глейси в инстаграмме">
 
               </a>
             </li>
-            <li class="footer-social__item social-item">
+            <li class="footer-social__item social-fb">
               <a href="#" class="social-item__link" aria-label="Магазин Глейси в фейсбуке">
 
               </a>
             </li>
-            <li class="footer-social__item social-item">
+            <li class="footer-social__item social-vk">
               <a href="#" class="social-item__link" aria-label="Магазин Глейси в Вконтакте">
 
               </a>
@@ -403,7 +408,7 @@
       </div>
     </form>
   </secttion>
- 
+
   <script src="js/script.js"></script>
 </body>
 
