@@ -38,7 +38,6 @@ a {
 .button:hover, .button:focus {
     box-shadow: 0 2px 2px #ac1000;
     background-color: rgba(255, 255, 255, 0.2);
-    background-color: #ffffff;
     background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
@@ -301,25 +300,45 @@ button.button {
 }
 
 .footer-social__list {
+    padding: 0;
     display: flex;
     list-style: none;
 }
 
-.foter-social__item {
-    width: 38px;
-    height: 38px;
+.footer-social__item  {
+    width: 32px;
+    height: 32px;  
 }
 
-.social-item {
-    
+.social-tw {
+    background: url("/img/twitter.svg") no-repeat center center;
+}
+
+.social-inst {
+    background: url("/img/instagram.svg") no-repeat center center;
+}
+
+.social-fb {
+    background: url("/img/fb.svg") no-repeat center center;
+}
+
+.social-vk {
+    background: url("/img/vk.svg") no-repeat center center;
 }
 
 .footer-link__list {
+    padding: 0;
     display: flex;
     list-style: none;
     font-size: 13px;
     font-weight: 700;
     line-height: 16px;
+}
+
+.footer-link__list li:nth-child(1)::before {
+    content: url("/img/heart.svg");
+    width: 13px;
+    height: 13px;
 }
 
 .footer-link__list a {
