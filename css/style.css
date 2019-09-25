@@ -1,12 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
     color: #ffffff;
     background-color: #849d8f;
+}
+
+*, *::before, *::afrer {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 a {
@@ -35,7 +43,8 @@ a {
     background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
     box-shadow: 0 2px 2px #ac1000;
     background-color: rgba(255, 255, 255, 0.2);
     background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
@@ -65,7 +74,8 @@ button.button {
     margin-left: auto;
 }
 
-.main-nav a, .header-button a {
+.main-nav a,
+.header-button a {
     color: #ffffff;
     text-decoration: underline;
 }
@@ -100,11 +110,11 @@ button.button {
 }
 
 .banners__item:nth-child(1) {
-    background: url("/img/bg-banners-raspberry.png") no-repeat;
+    background: url("../img/bg-banners-raspberry.png") no-repeat;
 }
 
 .banners__item:nth-child(2) {
-    background: url("/img/bg-banners-chocolate.png") no-repeat;
+    background: url("../img/bg-banners-chocolate.png") no-repeat;
 }
 
 .banners__title {
@@ -169,7 +179,7 @@ button.button {
     padding: 20px;
     border-radius: 15px;
     color: #323232;
-    background: url("/img/bg-wafer.jpg");
+    background: url("../img/bg-wafer.jpg");
 }
 
 .about-us__header {
@@ -208,7 +218,7 @@ button.button {
     padding: 20px;
     box-sizing: border-box;
     border-radius: 15px;
-    background: url("/img/bg-post.png") no-repeat;
+    background: url("../img/bg-post.png") no-repeat;
     color: #323232;
 }
 
@@ -217,7 +227,7 @@ button.button {
 }
 
 .news {
-    background: url("/img/bg-strawberry.png") no-repeat;
+    background: url("../img/bg-strawberry.png") no-repeat;
     background-position: -60px center;
 }
 
@@ -253,6 +263,21 @@ button.button {
     margin-top: auto;
 }
 
+.map {
+    display: flex;
+    width: 100%;
+    min-height: 640px;
+    background: url(../img/map.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.map .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
 .map img {
     width: 100%;
 }
@@ -267,6 +292,7 @@ button.button {
     color: #323232;
     background-color: #ffffff;
 }
+
 
 .map-contact-block__address {
     font-size: 14px;
@@ -294,6 +320,10 @@ button.button {
     font-weight: 700;
 }
 
+.page-footer {
+    padding: 20px 0px;
+}
+
 .page-footer .container {
     display: flex;
     justify-content: space-between;
@@ -311,19 +341,19 @@ button.button {
 }
 
 .social-tw {
-    background: url("/img/twitter.svg") no-repeat center center;
+    background: url("../img/twitter.svg") no-repeat center center;
 }
 
 .social-inst {
-    background: url("/img/instagram.svg") no-repeat center center;
+    background: url("../img/instagram.svg") no-repeat center center;
 }
 
 .social-fb {
-    background: url("/img/fb.svg") no-repeat center center;
+    background: url("../img/fb.svg") no-repeat center center;
 }
 
 .social-vk {
-    background: url("/img/vk.svg") no-repeat center center;
+    background: url("../img/vk.svg") no-repeat center center;
 }
 
 .footer-link__list {
@@ -336,7 +366,7 @@ button.button {
 }
 
 .footer-link__list li:nth-child(1)::before {
-    content: url("/img/heart.svg");
+    content: url("../img/heart.svg");
     width: 13px;
     height: 13px;
 }
