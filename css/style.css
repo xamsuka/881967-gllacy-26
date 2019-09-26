@@ -446,7 +446,7 @@ button.button {
     position: relative;
 }
 
-.catalog__item::before {
+.catalog-hit .catalog__item::before {
     content: url("../img/hit.svg");
     position: absolute;
     top: 0px;
