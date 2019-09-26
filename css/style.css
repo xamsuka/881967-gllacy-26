@@ -27,8 +27,10 @@ a {
 }
 
 .container {
-    width: 1146px;
+    width: 1200px;
+    padding: 0px 27px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .button {
@@ -67,6 +69,10 @@ button.button {
     border: 1px solid rgba(178, 178, 178, 0.52);
     border-radius: 5px;
     background-color: #ffffff;
+}
+
+.header {
+    padding-top: 9px;
 }
 
 .header__container {
@@ -150,6 +156,7 @@ button.button {
 
 .catalog__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
@@ -170,7 +177,7 @@ button.button {
 
 .product-item {
     width: 267px;
-    margin-right: 26px;
+    /* margin-right: 26px; */
 }
 
 .product-item:nth-child(4n) {
@@ -449,7 +456,7 @@ button.button {
 .product-item__price {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0;   
     margin: 0;
     padding-bottom: 61px;
     line-height: 45px;
