@@ -71,16 +71,29 @@ button.button {
     background-color: #ffffff;
 }
 
-.header {
-    padding-top: 9px;
+.header__logo {
+    margin-right: 25px;
 }
 
 .header__container {
     display: flex;
+    padding-top: 9px;
+    padding-bottom: 2px;
+}
+
+.main-nav {
+    padding: 0;
+    padding-left: 25px;
+}
+
+.main-nav__item {
+    margin-right: 25px;
 }
 
 .main-nav, .header-button {
     display: flex;
+    padding: 0;
+    align-items: center;
     font-size: 16px;
     list-style: none;
 }
@@ -89,10 +102,56 @@ button.button {
     margin-left: auto;
 }
 
+.header-button__item {
+    margin-right: 10px;
+}
+
+.header-button__item:last-child {
+    margin: 0;
+}
+
+.button-search,
+.button-login,
+.button-basket {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 17px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    vertical-align: center;
+}
+
+.button-search {
+    position: relative;
+    width: 33px;
+    height: 33px;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.button-search a::before {
+    content: url("../img/loupe.svg");
+    position: absolute;
+    top: 8px;
+    left: 9px;
+}
+.button-login a::before {
+    content: url("../img/entrance.svg");
+    margin-right: 4px;
+}
+.button-basket a::before {
+    content: url("../img/basket.svg");
+    margin-right: 4px;
+}
+
 .main-nav a,
-.header-button a {
+.product-item__title a {
     color: #ffffff;
-    text-decoration: underline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-info__time {
@@ -166,7 +225,6 @@ button.button {
     margin: 0;
     color: #ffffff;
     font-weight: 500;
-    text-decoration: underline;
     text-align: center;
 }
 
@@ -404,11 +462,6 @@ button.button {
     content: url("../img/heart.svg");
     width: 13px;
     height: 13px;
-}
-
-.footer-link__list a {
-    color: #ffffff;
-    text-decoration: underline;
 }
 
 .footer-copyright__text {
