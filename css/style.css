@@ -90,22 +90,30 @@ button.button {
     background-color: #ffffff;
 }
 
+.header {
+    padding-top: 9px;
+}
+
 .header__container {
     display: flex;
-    padding-top: 9px;
-    padding-bottom: 2px;
+    align-items: center;
 }
 
 .header__logo {
-    margin-right: 23px;
+    margin-right: 24px;
+    max-height: 64px;
 }
 
-.header__menu {
-    padding-top: 20px;
+.header__logo {
+    display: block;
+}
+
+.main-nav {
+    width: 349px;
 }
 
 .main-nav__item {
-    margin-right: 28px;
+    margin-right: 27px;
 }
 
 .main-nav__item:last-child {
@@ -125,7 +133,6 @@ button.button {
 }
 
 .header-button {
-    padding-top: 14px;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
