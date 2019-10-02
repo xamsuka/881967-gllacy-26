@@ -142,6 +142,11 @@ button.button {
     border-radius: 25px;
 }
 
+.main-nav__link.current {
+    background-color: #d07058;
+    color: #ffffff;
+}
+
 .main-nav__link:hover,
 .main-nav__link:focus {
     background: rgba(255, 255, 255, 1);
@@ -773,13 +778,23 @@ button.button {
 }
 
 .breadcrumbs__item {
+    position: relative;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    padding-right: 14px;
+    margin-right: 8px;
+}
+
+.breadcrumbs__item::after {
+    content: "»";
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .breadcrumbs li:not(.site-navigation-current) a {
-    text-decoration: underline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .pagination-list {
@@ -791,8 +806,30 @@ button.button {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.pagination-list__item a {
-    color: #ffffff;
+.pagination-list__item {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 50%;
+}
+
+.pagination-list__item .pagination-list__link {
+    display: block;
+}
+
+.pagination-list__item.pagination__item_current  {
+    background-color: #ffffff;
+}
+
+.pagination-list__item.pagination__item_current a {
+    color: #323232;
+}
+
+.pagination-list__link:hover .pagination-list__item {
+    background: #ffffff;
+    opacity: 0.2;
 }
 
 .sort-form__list {
