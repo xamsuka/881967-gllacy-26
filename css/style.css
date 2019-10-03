@@ -675,7 +675,7 @@ button.button {
     margin-right: 11px;
     width: 32px;
     height: 32px;  
-    opacity: 0.8;
+    
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
 }
@@ -684,10 +684,11 @@ button.button {
     display: block;
     width: 32px;  
     height: 32px; 
+    opacity: 0.8;
 }
 
-.footer-social__item:hover,
-.footer-social__item:focus {
+.social-item__link:hover,
+.social-item__link:focus {
     opacity: 1;
 }
 
@@ -814,13 +815,12 @@ button.button {
     text-align: center;
     line-height: 27px;
     border-radius: 50%;
-
     font-weight: 500;
-    
 }
 
 .pagination-list__item .pagination-list__link {
     display: block;
+    border-radius: 50%;
 }
 
 .pagination-list__item.pagination__item_current {
@@ -832,7 +832,8 @@ button.button {
     color: #323232;
 }
 
-.pagination-list__item:hover  {
+.pagination-list__link:hover,
+.pagination-list__link:focus {
     background: rgba(255,255,255,0.2);
 }
 
@@ -841,8 +842,22 @@ button.button {
 }
 
 .sort-form__list {
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+}
+
+.sort-form__item:nth-child(1) {
+    width: 194px;
+    margin-right: 14px;
+}
+
+.sort-form__item:nth-child(2) {
+    width: 220px;
+}
+
+.sort-form__item:nth-child(3) {
+    width: 415px;
 }
