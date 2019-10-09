@@ -326,6 +326,7 @@ button.button {
 }
 
 .search {
+    display: none;
     margin-top: 5px;
     padding: 20px 15px;
     width: 341px;
@@ -335,6 +336,10 @@ button.button {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     background-color: #f8f7f4;
     border-radius: 5px;
+}
+
+.button-search:hover .search {
+    display: block;
 }
 
 .login {
