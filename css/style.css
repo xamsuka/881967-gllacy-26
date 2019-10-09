@@ -342,7 +342,16 @@ button.button {
     display: block;
 }
 
+.button-login:hover .login {
+    display: block;
+}
+
+.button-basket:hover .basket {
+    display: block;
+}
+
 .login {
+    display: none;
     padding: 20px 17px 22px 19px;
     margin-top: 5px;
     width: 277px;
@@ -380,6 +389,7 @@ button.button {
 }
 
 .basket {
+    display: none;
     padding: 20px 13px 21px 21px;
     margin-top: 5px;
     width: 539px;
