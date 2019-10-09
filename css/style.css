@@ -749,7 +749,7 @@ button.button {
     margin-right: 11px;
     width: 32px;
     height: 32px;  
-    opacity: 0.8;
+    
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
 }
@@ -758,10 +758,11 @@ button.button {
     display: block;
     width: 32px;  
     height: 32px; 
+    opacity: 0.8;
 }
 
-.footer-social__item:hover,
-.footer-social__item:focus {
+.social-item__link:hover,
+.social-item__link:focus {
     opacity: 1;
 }
 
@@ -902,29 +903,38 @@ button.button {
     display: inline-block;
     width: 27px;
     height: 27px;
+    margin-right: 5px;
     text-align: center;
     line-height: 27px;
     border-radius: 50%;
+    font-weight: 500;
 }
 
 .pagination-list__item .pagination-list__link {
     display: block;
+    border-radius: 50%;
 }
 
-.pagination-list__item.pagination__item_current  {
+.pagination-list__item.pagination__item_current {
     background-color: #ffffff;
 }
 
-.pagination-list__item.pagination__item_current a {
+.pagination-list__item.pagination__item_current a,
+.pagination-list__item:active a {
     color: #323232;
 }
 
-.pagination-list__link:hover .pagination-list__item {
-    background: #ffffff;
-    opacity: 0.2;
+.pagination-list__link:hover,
+.pagination-list__link:focus {
+    background: rgba(255,255,255,0.2);
+}
+
+.pagination-list__item:active {
+    background-color: #ffffff;
 }
 
 .sort-form__list {
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
