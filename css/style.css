@@ -129,7 +129,15 @@ button.button {
 
 .main-nav__item {
     display: inline-block;
-    
+}
+
+.main-nav__item:hover .sub-menu,
+.main-nav__item:focus .sub-menu {
+    display: block;
+}
+
+.main-nav > li {
+    position: relative;  
 }
 
 .main-nav__item:last-child {
@@ -168,6 +176,67 @@ button.button {
 
 .main-nav {
     line-height: 18px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    padding: 0;
+    min-width: 143px;
+    list-style: none;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sub-menu__link {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 21px;
+    color: #323232;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.sub-menu li:first-child {
+    position: relative;
+}
+
+.sub-menu li:first-child a {
+    padding: 0;
+    padding-left: 21px;
+    font-weight: 700;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.sub-menu li:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: 128px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.sub-menu__link:hover,
+.sub-menu__link:focus  {
+    background-color: #fbded7;
+}
+
+.sub-menu__link:active {
+    background-color: #f6b5a5;
+}
+
+.sub-menu__link.current {
+    background-color: #d07058; 
+    color: #ffffff;
 }
 
 .header-button {
@@ -408,16 +477,15 @@ button.button {
     left: 46px;
 }
 
-
 .catalog__item:hover .catalog__background ,
-.catalog__item:hover .catalog__background  {
+.catalog__item:focus .catalog__background  {
     content: "";
     position: absolute;
     top: -6px;
     left: -13px;
 
     display: block;
-    z-index: 3;
+    z-index: 1;
 }
 
 .catalog__button {
@@ -470,9 +538,15 @@ button.button {
     text-align: center;
 }
 
-.product-item__title a {
+.product-item__link {
     color: inherit;
     font-size: 16px;
+}
+
+.product-item__link:hover,
+.product-item__link:focus {
+    color: #ffbc9e;
+    border-color: color: #ffbc9e;
 }
 
 .product-item {
@@ -746,6 +820,12 @@ button.button {
     margin-right: 0;
 }
 
+.footer-link__link:hover,
+.footer-link__link:focus {
+    color: #ffbc9e;
+    border-color:#ffbc9e;
+}
+
 .footer-link__list .footer-link__item:nth-child(1)::before {
     content: url("../img/heart.svg");
     position: absolute;
@@ -767,6 +847,12 @@ button.button {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.footer-copyright__text a:hover,
+.footer-copyright__text a:focus {
+    color: #ffbc9e;
+    border-color:#ffbc9e;
+}
+
 .breadcrumbs {
     display: flex;
     padding: 0;
@@ -775,6 +861,12 @@ button.button {
 
 .breadcrumbs a {
     color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    color: #ffbc9e;
+    border-color:#ffbc9e;
 }
 
 .breadcrumbs__item {
