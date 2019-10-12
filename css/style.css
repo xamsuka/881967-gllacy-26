@@ -9,12 +9,12 @@ body {
     background-color: #849d8f;
 }
 
-*, *::before, *::afrer {
+html {
     box-sizing: border-box;
 }
 
-html {
-    box-sizing: border-box;
+*, *::before, *::afrer {
+    box-sizing: inherit;
 }
 
 a {
@@ -202,7 +202,7 @@ button.button {
     margin-right: 8px;
 }
 
-.button-search .button-search__link {
+.button-search__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,8 +408,7 @@ button.button {
     left: 46px;
 }
 
-
-.catalog__item:hover .catalog__background ,
+.catalog__item:hover .catalog__background,
 .catalog__item:hover .catalog__background  {
     content: "";
     position: absolute;
