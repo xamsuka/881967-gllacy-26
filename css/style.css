@@ -621,7 +621,7 @@ button.button {
 
 .catalog__item {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
 
 }
 
@@ -634,6 +634,7 @@ button.button {
     padding-top: 6px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
     background-color: rgba(248, 247, 244,0.2);
+    z-index: 1;
 }
 
 .catalog__background button {
@@ -642,7 +643,7 @@ button.button {
     left: 46px;
 }
 
-.catalog__item:hover .catalog__background ,
+.catalog__item:hover .catalog__background,
 .catalog__item:focus .catalog__background  {
     content: "";
     position: absolute;
@@ -650,7 +651,7 @@ button.button {
     left: -13px;
 
     display: block;
-    z-index: 1;
+    
 }
 
 .catalog__button {
@@ -1104,4 +1105,121 @@ button.button {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+}
+
+.sort-form__list li {
+    margin-right: 14px;
+    margin-bottom: 18px;
+}
+
+.sort-form__title {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.sort-product {
+    width: 194px;
+   
+}
+
+.sort-product input {   
+    padding: 10px 16px;
+    margin-top: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(248, 247, 244,0.2);
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.sort-product__button {
+    position: relative;
+}
+
+input[type="image"] {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 9px;
+    right: 10px;
+    vertical-align: middle;
+    background: url(../img/select-arrow.svg) no-repeat center center;
+}
+
+.sort-price {
+    width: 220px;
+}
+
+.filter-range__price label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.filter-range__price input {
+    width: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.filter-range__controls {
+    position: relative;
+    margin-top: 6px;
+    padding: 16px 22px;
+    background-color: rgb(248, 247, 244,0.2);
+    border-radius: 20px;
+}
+
+.filter-range__scale {
+    height: 4px;
+    background-color: rgb(248, 247, 244, 0.5);
+}
+
+.filter-range__bar {
+    height: 4px;
+    width: 70%;
+    background-color: rgb(248, 247, 244, 1);
+}
+
+.filter-range__toggle {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ababab;
+}
+
+.filter-range__toggle.toogle-max {
+    left: 60%;
+}
+
+.sort-fat-content {
+    width: 415px;
+}
+
+.sort-additive {
+    width: 703px;
+}
+
+.sort-form__button {
+    padding: 9px 27px 7px 27px;
+    border: 2px solid #ffffff;
+    background-color: rgb(248, 247, 244, 0.2);
+    border-radius: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+
 }
