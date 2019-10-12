@@ -27,6 +27,23 @@
             <ul class="main-nav">
               <li class="main-nav__item">
                 <a href="catalog.html" class="main-nav__link">Каталог</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Новинки</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Сливочное</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link current">Щербеты</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Фруктовый лёд</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a href="#" class="sub-menu__link">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">Доставка и оплата</a>
@@ -47,6 +64,17 @@
                     fill="#fff" />
                 </svg>
               </a>
+              <section class="search">
+                <h2 class="search__header visually-hidden">Поиск по сайту</h2>
+                <form class="search-form" action="#" method="get">
+                  <div class="search-form__content">
+                    <label for="search-text" class="search-form__title visually-hidden">Поле для поиска на
+                      странице</label>
+                    <input type="text" name="search" id="search-text" class="search-form__input input"
+                      placeholder="Крем-брюле">
+                  </div>
+                </form>
+              </section>
             </li>
             <li class="header-button__item button-login">
               <a href="#" class="button-login__link">
@@ -61,6 +89,30 @@
                 </svg>
                 Вход
               </a>
+              <section class="login">
+                <h2 class="login__header visually-hidden">Вход на сайт</h2>
+                <form class="login-form" action="#" method="post">
+                  <div class="login-form__content">
+                    <p>
+                      <label for="user-login" class="login-form__title-login visually-hidden">Логин</label>
+                      <input type="text" class="login-form__input input" id="user-login" name="login"
+                        placeholder="email@example.com">
+                    </p>
+                    <p>
+                      <label for="user-password" class="login-form__title-login visually-hidden">Пароль</label>
+                      <input type="password" class="login-form__input input" name="password" id="user-password"
+                        aria-label="Введите пароль" placeholder="••••••••">
+                    </p>
+                    <div class="login-form__button login-box">
+                      <button class="button login-box__button">Войти</button>
+                      <ul class="login-box__list">
+                        <li class="login-box__item"><a class="login-box__link" href="#">Забыли пароль?</a></li>
+                        <li class="login-box__item"><a class="login-box__link" href="#">Новая регистрация</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+              </section>
             </li>
             <li class="header-button__item button-basket">
               <a href="#" class="button-basket__link">
@@ -74,6 +126,50 @@
                 </svg>
                 Пусто
               </a>
+              <section class="basket">
+                <h2 class="basket__header visually-hidden">Ваша корзина</h2>
+                <form class="backet-form" action="#" method="POST">
+                  <div class="basket-form__content">
+                    <table class="basket-form__list">
+                      <tr class="basket-form__item basket-item">
+                        <td class="basket-item__remove">
+
+                        </td>
+                        <td class="basket-item__image">
+                          <img src="img/ice-cream-1.png" width="33" height="33"
+                            alt="Сливочно-кофейное с кусочками шоколада">
+                        </td>
+                        <td class="basket-item__title">
+                          Пломбир с апельсиновым джемом
+                        </td>
+                        <td class="basket-item__price">
+                          <span class="basket-item__gold">1,5 кг х</span> <span class="basket-item__unit">200
+                            руб.</span>
+                        </td>
+                        <td class="basket-item__total">300 руб.</td>
+                      </tr>
+                      <tr class="basket-form__item">
+                        <td class="basket-item__remove">
+                        </td>
+                        <td class="basket-item__image">
+                          <img src="img/ice-cream-4.png" width="33" height="33" alt="Сливочно-кофейное с кусочками шоколада">
+                        </td>
+                        <td class="basket-item__title">
+                            Клубничный пломбир с присыпкой 
+                            из белого шоколада
+                        </td>
+                        <td class="basket-item__price">
+                          <span class="basket-item__gold">1,5 кг х</span> <span class="basket-item__unit">200
+                            руб.</span>
+                        </td>
+                        <td class="basket-item__total">300 руб.</td>
+                      </tr>
+                    </table>
+                    <span class="basket-form__total">Итого: 750 руб.</span>
+                    <button class="button basket__button">Оформить заказ</button>
+                  </div>
+                </form>
+              </section>
             </li>
           </ul>
         </div>
@@ -368,68 +464,6 @@
         </div>
       </div>
     </footer>
-
-    <section class="search visually-hidden">
-      <h2 class="search__header visually-hidden">Поиск по сайту</h2>
-      <form class="search-form" action="#" method="get">
-        <div class="search-form__content">
-          <label for="search-text" class="search-form__title visually-hidden">Поле для поиска на странице</label>
-          <input type="text" name="search" id="search-text" class="search-form__input" placeholder="Крем-брюле">
-        </div>
-      </form>
-    </section>
-
-    <section class="login visually-hidden">
-      <h2 class="login__header visually-hidden">Вход на сайт</h2>
-      <form class="login-form" action="#" method="post">
-        <div class="login-form__content">
-          <p>
-            <label for="user-login" class="login-form__title-login visually-hidden">Логин</label>
-            <input type="text" class="login-form__input" id="user-login" name="login" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="user-password" class="login-form__title-login visually-hidden">Пароль</label>
-            <input type="password" class="login-form__input" name="password" id="user-password"
-              aria-label="Введите пароль" placeholder="••••••••">
-          </p>
-          <div>
-            <button class="button login-form__button">Войти</button>
-            <ul class="login-form__list">
-              <li class="login-form__item"><a class="login-form__link" href="#">Забыли пароль?</a></li>
-              <li class="login-form__item"><a class="login-form__link" href="#">Новая регистрация</a></li>
-            </ul>
-          </div>
-        </div>
-      </form>
-    </section>
-
-    <section class="basket visually-hidden">
-      <h2 class="basket__header visually-hidden">Ваша корзина</h2>
-      <form class="backet-form" action="#" method="POST">
-        <div class="basket-form__content">
-          <table class="basket-form__list">
-            <tr class="basket-form__item">
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr class="basket-form__item">
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-          <div class="basket__price">
-            Итого: 750руб.
-          </div>
-          <button class="button basket__button">Оформить заказ</button>
-        </div>
-      </form>
-    </section>
 
     <secttion class="feedback visually-hidden">
       <h2 class="feedback__header visually-hidden">Обратная связь</h2>
