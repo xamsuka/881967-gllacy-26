@@ -469,27 +469,29 @@
         </div>
       </div>
     </footer>
-
-    <secttion class="feedback visually-hidden">
-      <h2 class="feedback__header visually-hidden">Обратная связь</h2>
-      <form class="feedback-form" action="#" method="POST">
-        <div class="feedback-form__content">
-          <p class="feedback-form__text">Мы обязательно вам ответим!</p>
-          <label for="user-name" class="visually-hidden">Ваше имя</label>
-          <input type="text" class="feedback-form__input" name="name" id="user-name" placeholder="Как вас зовут?">
-
-          <label for="user-email" class="visually-hidden">Ваша почта</label>
-          <input type="email" class="feedback-form__input" name="email" id="user-email"
-            placeholder="Ваша почта для ответа?">
-
-          <label for="user-comment" class="visually-hidden">Комментарий</label>
-          <textarea name="comment" id="user-comment" cols="30" rows="10"
-            placeholder="Напишите что-нибудь..."></textarea>
-          <button type="submit" class="button feedback-form__button">Отправить</button>
-        </div>
-      </form>
-    </secttion>
   </div>
+  
+  <secttion class="feedback">
+    <h2 class="feedback__header visually-hidden">Обратная связь</h2>
+    <form class="feedback-form" action="#" method="POST">
+      <div class="feedback-form__content">
+        <p class="feedback-form__text">Мы обязательно вам ответим!</p>
+        <label for="user-name" class="visually-hidden">Ваше имя</label>
+        <input type="text" class="feedback-form__input input" name="name" id="user-name" placeholder="Как вас зовут?">
+
+        <label for="user-email" class="visually-hidden">Ваша почта</label>
+        <input type="email" class="feedback-form__input input" name="email" id="user-email"
+          placeholder="Ваша почта для ответа?">
+
+        <label for="user-comment" class="visually-hidden">Комментарий</label>
+        <textarea class="feedback-form__area input" name="comment" id="user-comment" 
+          placeholder="Напишите что-нибудь..."></textarea>
+        <button type="submit" class="button feedback-form__button">Отправить</button>
+      </div>
+      <button class="feedback-form__close" type="button">Закрыть</button>
+    </form>
+    
+  </secttion>
   <script src="js/script.js"></script>
 </body>
 

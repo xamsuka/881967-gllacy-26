@@ -27,14 +27,6 @@ img {
     height: auto;
 }
 
-.display-none {
-    display: none;
-}
-
-.display-show {
-    display: block;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -721,7 +713,7 @@ button.button {
 .product-item__link:hover,
 .product-item__link:focus {
     color: #ffbc9e;
-    border-color: color: #ffbc9e;
+    border-color: #ffbc9e;
 }
 
 .product-item {
@@ -1335,3 +1327,100 @@ sort-additive {
     cursor: pointer;
 }
 
+.feedback {
+    display: none;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 478px;
+    height: 443px;
+    box-sizing: border-box;
+    background-color: #f8f7f4;
+    padding: 20px 24px 27px 24px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+    border-radius: 5px;   
+}
+
+.feedback-form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.feedback-form__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.feedback-form__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-form__close::before,
+.feedback-form__close::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 8px;
+    height: 18px;
+    width: 2px;
+    background: #323232;
+}
+
+.feedback-form__close::before {
+    transform: rotate(45deg);
+}
+
+.feedback-form__close::after {
+    transform: rotate(-45deg);
+}
+
+.feedback-form__text {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #323232;
+}
+
+.feedback-form__input {
+    width: 267px;
+    box-sizing: border-box;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.feedback-form__area {
+    min-height: 155px;
+}
+
+.feedback-form__button {
+    margin-left: auto;
+}
+
+.feedback-form__input:hover,
+.feedback-form__input:focus {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.display-none {
+    display: none;
+}
+
+.display-show {
+    display: block;
+}
