@@ -31,7 +31,6 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -121,7 +120,7 @@ button.button {
 }
 
 .header__logo {
-    margin-right: 11px;
+    margin-right: 10px;
     max-height: 64px;
 }
 
@@ -148,6 +147,7 @@ button.button {
 
 .main-nav__link {
     display: block;
+    position: relative;
     padding: 9px 14px;
     border-radius: 25px;
 }
@@ -178,6 +178,7 @@ button.button {
 
 .main-nav {
     line-height: 18px;
+    padding-bottom: 2px;
 }
 
 .sub-menu {
@@ -486,7 +487,7 @@ button.button {
 
 .slider {
     position: relative;
-    padding-top: 321px;
+    padding-top: 273px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -505,7 +506,7 @@ button.button {
 }
 
 .button.slider__item-button {
-    padding: 16px 41px;
+    padding: 10px 40px;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
@@ -513,7 +514,7 @@ button.button {
 
 .slider-controls {
     position: absolute;
-    bottom: 0;
+    bottom: 21px;
     left: 0;
 
     transition: 2s;
@@ -521,7 +522,8 @@ button.button {
 
 .slider-controls label {
     display: inline-block;
-    margin-right: 8px;
+    box-sizing: border-box;
+    margin-right: 5px;
     width: 21px;
     height: 21px;
     vertical-align: top;
@@ -560,8 +562,8 @@ button.button {
 .slider-controls label:hover,
 .slider-controls label:focus {
     background-origin: padding-box;
-    background: #f8f7f4;
-    opacity: 0.4;
+    background-color: rgba(248, 247, 244,0.4);
+    border: 2px solid #ffffff;
 }
 
 .slider-controls label:active {
@@ -579,7 +581,9 @@ button.button {
     flex-direction: column;
     box-sizing: border-box;
     width: 560px;
-    padding: 20px;
+    height: 230px;
+    padding-top: 17px;
+    padding-left: 19px;
     color: #ffffff;
     background-color: #323232;
     border-radius: 15px;
@@ -601,13 +605,14 @@ button.button {
 
 .banners__text {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 14px;
     margin-bottom: 20px;
 }
 
 .baners__button {
     margin-top: 25px;
     margin-left: auto;
+    padding: 10px 22px;
 }
 
 
@@ -687,7 +692,6 @@ button.button {
 
 .catalog-hit {
     padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .catalog__list {
@@ -695,6 +699,7 @@ button.button {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -734,7 +739,10 @@ button.button {
 }
 
 .about-us {
-    padding: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     border-radius: 15px;
     color: #323232;
     background: url("../img/bg-wafer.jpg");
@@ -765,8 +773,8 @@ button.button {
 
 .about-us__item-text {
     margin: 0;
-    padding-top: 10px;
-    margin-left: 9px;
+    padding-top: 12px;
+    margin-left: 7px;
     margin-bottom: 10px;
     font-weight: 400;
 }
@@ -1135,7 +1143,7 @@ button.button {
     margin-top: 6px;
     width: 100%;
     box-sizing: border-box;
-    background-color: rgb(248, 247, 244,0.2);
+    background-color: rgba(248, 247, 244,0.2);
     border: none;
     border-radius: 20px;
     color: #ffffff;
@@ -1180,19 +1188,19 @@ input[type="image"] {
     position: relative;
     margin-top: 6px;
     padding: 16px 22px;
-    background-color: rgb(248, 247, 244,0.2);
+    background-color: rgba(248, 247, 244,0.2);
     border-radius: 20px;
 }
 
 .filter-range__scale {
     height: 4px;
-    background-color: rgb(248, 247, 244, 0.5);
+    background-color: rgba(248, 247, 244, 0.5);
 }
 
 .filter-range__bar {
     height: 4px;
     width: 70%;
-    background-color: rgb(248, 247, 244, 1);
+    background-color: rgba(248, 247, 244, 1);
 }
 
 .filter-range__toggle {
@@ -1215,7 +1223,7 @@ input[type="image"] {
     box-sizing: border-box;
     margin-top: 6px;
     padding: 8px 14px;
-    background-color: rgb(248, 247, 244,0.2);
+    background-color: rgba(248, 247, 244,0.2);
     border-radius: 20px;
     font-size: 0;
 }
@@ -1277,7 +1285,7 @@ sort-additive {
     margin-top: 6px;
     box-sizing: border-box;
     padding: 8px 19px 8px 14px;
-    background-color: rgb(248, 247, 244,0.2);
+    background-color: rgba(248, 247, 244,0.2);
     border-radius: 20px;
     font-size: 0;
 }
@@ -1323,7 +1331,7 @@ sort-additive {
     margin-left: 13px;
     padding: 9px 27px 7px 27px;
     border: 2px solid #ffffff;
-    background-color: rgb(248, 247, 244, 0.2);
+    background-color: rgba(248, 247, 244, 0.2);
     border-radius: 20px;
     font-weight: 500;
     font-size: 16px;
