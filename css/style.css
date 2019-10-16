@@ -292,16 +292,6 @@ button.button {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.product-item__title {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.product-item__title a {
-    color: #ffffff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 .button-search__link:hover,
 .button-search__link:focus,
 .button-login__link:hover,
@@ -636,19 +626,18 @@ button.button {
 }
 
 .product-item {
-    min-height: 316px;
+    width: 267px;
+    min-height: 322px;
     text-align: center;
 }
 
 .product-item > div {
     position: absolute;
-    padding-left: 13px;
-    padding-right: 13px;
     box-sizing: border-box;
-    width: 293px;
-    min-height: 316px;
-    padding-top: 6px;
+    width: 100%;
+    min-height: 322px;
     border-radius: 5px;
+
 }
 
 .product-item:hover > div {
@@ -689,10 +678,6 @@ button.button {
     font-size: 30px;
 }
 
-.product-item__title {
-    margin-top: 16px;
-}
-
 .catalog-hit {
     padding-top: 40px;
 }
@@ -708,18 +693,26 @@ button.button {
 
 .product-item__title {
     margin: 0;
+    padding-left: 7px;
+    padding-right: 8px;
     color: #ffffff;
     font-weight: 500;
     text-align: center;
 }
 
-.product-item__link {
+
+.product-title__link {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-title__link{
     color: inherit;
     font-size: 16px;
 }
 
-.product-item__link:hover,
-.product-item__link:focus {
+.product-title__link:hover,
+.product-title__link:focus {
     color: #ffbc9e;
     border-color: #ffbc9e;
 }
@@ -738,14 +731,14 @@ button.button {
     max-width: 267px;
     height: 266px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 .about-us {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
     border-radius: 15px;
     color: #323232;
     background: url("../img/bg-wafer.jpg");
@@ -767,6 +760,11 @@ button.button {
 .about-us__item {
     display: flex;
     width: 532px;
+    margin-right: 34px;
+}
+
+.about-us__item:nth-child(2n) {
+    margin-right: 0;
 }
 
 .about-us__item img {
@@ -795,7 +793,8 @@ button.button {
 .news, .mail {
     width: 560px;
     min-height: 220px;
-    padding: 20px;
+    padding-top: 23px;
+    padding-left: 20px;
     box-sizing: border-box;
     border-radius: 15px;
     background: url("../img/bg-post.png") no-repeat;
@@ -813,7 +812,7 @@ button.button {
 
 .news__text {
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .mail__content {
@@ -821,12 +820,18 @@ button.button {
     flex-direction: column;
     box-sizing: border-box;
     height: 100%;
-    padding: 30px 15px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-left: 22px;
+    padding-right: 22px;
     border-radius: inherit;
     background-color: #ffffff;
 }
 
 .news__title {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
     max-width: 290px;
     font-size: 24px;
     line-height: 30px;
@@ -843,15 +848,25 @@ button.button {
     margin-top: auto;
 }
 
+.mail-form__content {
+    display: flex;
+}
+
 .mail-form__input {
+    padding: 9px;
+    padding-left: 12px;
     width: 368px;
     margin-right: 11px;
     box-sizing: border-box;
 }
 
+.mail-form__button {
+    padding: 10px 18px;
+}
+
 .map {
     width: 100%;
-    max-height: 640px;
+    max-height: 430px;
     position: relative;
 }
 
@@ -874,43 +889,63 @@ button.button {
     width: 100%;
 }
 
-.map-contact-block {
+.map-contact {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     max-width: 300px;
     width: 300px;
-    padding: 30px 25px;
+    height: 305px;
+    padding-top: 27px;
+    padding-bottom: 28px;
+    padding-left: 23px;
+    padding-right: 25px;
     border-radius: 25px;
     color: #323232;
     background-color: #ffffff;
 }
 
 
-.map-contact-block__address {
+.map-contact__info {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
 }
 
-.map-contact-block__address span {
+.map-contact__address {
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.map-contact__address span {
     display: block;
+}
+
+.map-contact__address span.address {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
 }
 
-.map-contact-block__tel {
+.map-contact__tel {
+    margin: 0;
+    margin-bottom: 26px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
 }
 
-.map-contact-block__tel span {
+.map-address__tel-link {
     display: block;
+    margin-top: 6px;
+    color: #323232;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
+}
+
+.map-contact-block__button {
+    width: 100%;
 }
 
 .page-footer {
@@ -1041,6 +1076,7 @@ button.button {
 .breadcrumbs {
     display: flex;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
