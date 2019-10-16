@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=11;IE=Edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=11;IE=Edge,chrome=1" />
     <title>HTML Academy: Глейси</title>
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700&display=swap&subset=cyrillic-ext"
@@ -181,8 +181,14 @@
                 </ul>
             </div>
             <section class="contact-info">
-                <p class="contact-info__time">с 10 до 20:00, ежедневно <a href="tel:+78124502525"
-                        class="contact-info__tel"> 812
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+                    <li class="breadcrumbs__item site-navigation-current"><a class="breadcrumbs__link"
+                            href="#">Сливочное</a></li>
+                </ul>
+                <p class="contact-info__time">С 10 до 20, ежедневно<a href="tel:+78124502525"
+                        class="contact-info__tel">8 812
                         450 25-25 </a>
                 </p>
             </section>
@@ -190,14 +196,9 @@
     </header>
     <main>
         <div class="container">
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
-                <li class="breadcrumbs__item site-navigation-current"><a class="breadcrumbs__link"
-                        href="#">Сливочное</a></li>
-            </ul>
+
             <section class="catalog">
-                <h2 class="catalog__header">Сливочное морожное</h2>
+                <h2 class="catalog__header">Сливочное мороженое</h2>
                 <section class="catalog__filter">
                     <form class="sort-form" action="#" method="GET">
                         <div class="sort-form__content">
@@ -228,8 +229,6 @@
                                         <div class="filter-range__toggle toogle-min"></div>
                                         <div class="filter-range__toggle toogle-max"></div>
                                     </div>
-                                    <!-- <label for="filter-range">Цена:</label>
-                                    <input type="range" id="filter-range" min="1" max="500"> -->
                                 </li>
                                 <li class="sort-form__item">
                                     <h3 class="sort-form__title">Жирность:</h3>

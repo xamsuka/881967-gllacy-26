@@ -75,6 +75,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 50px;
+    vertical-align: middle;
     font-size: 18px;
     line-height: 24px;
     color: inherit;
@@ -148,7 +149,7 @@ button.button {
 .main-nav__link {
     display: block;
     position: relative;
-    padding: 9px 14px;
+    padding: 7px 14px;
     border-radius: 25px;
 }
 
@@ -264,7 +265,7 @@ button.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 16px;
+    padding: 6px 16px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
 }
@@ -462,16 +463,26 @@ button.button {
     line-height: 18px;
 }
 
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .contact-info__time {
     margin: 0;
     font-size: 14px;
+    line-height: 16px;
     text-align: right;
 }
 
-.contact-info a {
+.contact-info__tel {
     display: block;
+    margin-left: auto;
+    margin-top: 3px;
     font-size: 22px;
-    line-height: 24px;
+    font-weight: 700;
+    line-height: 24px;  
     color: inherit;
 }
 
@@ -610,6 +621,9 @@ button.button {
 
 
 .catalog__header {
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 30px;
     font-size: 35px;
     line-height: 41px;
 }
@@ -654,12 +668,6 @@ button.button {
 
 .product-item:hover .catalog__button {
     display: block;
-}
-
-.catalog-hit .product-item__image::before {
-    content: url("../img/hit.svg");
-    position: absolute;
-    top: 0px;
 }
 
 .product-item__price {
@@ -732,6 +740,14 @@ button.button {
     height: 266px;
     border-radius: 50%;
     margin-bottom: 13px;
+}
+
+.catalog-hit .product-item__image::before {
+    content: url("../img/hit.svg");
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    top: 0px;
 }
 
 .about-us {
@@ -1101,6 +1117,13 @@ button.button {
 
 .breadcrumbs__item::after {
     content: "»";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.breadcrumbs__item:last-child::after {
+    content: "";
     position: absolute;
     right: 0;
     top: 0;
