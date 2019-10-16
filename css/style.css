@@ -584,6 +584,8 @@ button.button {
     height: 230px;
     padding-top: 17px;
     padding-left: 19px;
+    padding-right: 22px;
+    padding-bottom: 25px;
     color: #ffffff;
     background-color: #323232;
     border-radius: 15px;
@@ -610,9 +612,10 @@ button.button {
 }
 
 .baners__button {
-    margin-top: 25px;
+    margin-top: auto;
     margin-left: auto;
     padding: 10px 22px;
+    align-self: center;
 }
 
 
@@ -876,6 +879,7 @@ button.button {
     display: flex;
     flex-direction: column;
     max-width: 300px;
+    width: 300px;
     padding: 30px 25px;
     border-radius: 25px;
     color: #323232;
