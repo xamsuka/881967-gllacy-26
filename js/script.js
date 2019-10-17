@@ -12,28 +12,28 @@ var searchButton = document.querySelector('.search-form__input');
 var loginForm = document.querySelector('.login-form');
 
 var isSupportedStorage = true;
-var storage = "";
+var storage = '';
 
 try {
-    storage = localStorage.getItem("login");
+    storage = localStorage.getItem('login');
 } catch (err) {
     isSupportedStorage = false;
 }
 
-feedbackButton.addEventListener("click", function (evt) {
+feedbackButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     feedbackForm.classList.remove('modal-error');
     feedback.classList.add('display-show');
     
 });
 
-feedbackButtonClose.addEventListener("click", function(evt){
+feedbackButtonClose.addEventListener('click', function(evt){
     evt.preventDefault();
 
     feedback.classList.remove('display-show');
 });
 
-loginButtonLink.addEventListener("mouseover", function () {
+loginButtonLink.addEventListener('mouseover', function () {
     loginForm.classList.remove('modal-error');
     if (!storage) {
         loginInput.focus();
@@ -44,7 +44,7 @@ loginButtonLink.addEventListener("mouseover", function () {
     
 });
 
-searchButtonLink.addEventListener("mouseover", function() {
+searchButtonLink.addEventListener('mouseover', function() {
     searchButton.focus();
 });
 
@@ -54,7 +54,7 @@ loginForm.addEventListener('submit', function(evt) {
         loginForm.classList.add('modal-error');
     } else {
         if (isSupportedStorage) {
-          localStorage.setItem("login", loginInput.value);
+          localStorage.setItem('login', loginInput.value);
         }
     }
 });
@@ -66,11 +66,11 @@ feedbackForm.addEventListener('submit', function(evt) {
     }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (feedback.classList.contains("display-show")) {
-        feedback.classList.remove("display-show");
+      if (feedback.classList.contains('display-show')) {
+        feedback.classList.remove('display-show');
       }
     }
 });
