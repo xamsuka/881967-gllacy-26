@@ -585,7 +585,7 @@ button.button {
     padding-top: 17px;
     padding-left: 19px;
     padding-right: 22px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     color: #ffffff;
     background-color: #323232;
     border-radius: 15px;
@@ -608,7 +608,7 @@ button.button {
 
 .banners__text {
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     font-size: 18px;
     
 }
@@ -616,7 +616,10 @@ button.button {
 .baners__button {
     margin-top: auto;
     margin-left: auto;
-    padding: 10px 22px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 10px;
+    padding-bottom: 12px;
     align-self: center;
 }
 
@@ -809,11 +812,11 @@ button.button {
 
 .news, .mail {
     width: 560px;
-    min-height: 220px;
     padding-top: 23px;
     padding-left: 20px;
+    padding-bottom: 80px;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 13px;
     background: url("../img/bg-post.png") no-repeat;
     color: #323232;
 }
@@ -824,7 +827,7 @@ button.button {
 
 .news {
     background: url("../img/bg-strawberry.png") no-repeat;
-    background-position: -60px center;
+    background-position: -52px -225px;
 }
 
 .news__text {
@@ -842,7 +845,7 @@ button.button {
     padding-left: 22px;
     padding-right: 22px;
     border-radius: inherit;
-    background-color: #ffffff;
+    background-color: #f8f7f4;
 }
 
 .news__title {
@@ -878,7 +881,10 @@ button.button {
 }
 
 .mail-form__button {
-    padding: 10px 18px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .map {
@@ -1030,7 +1036,7 @@ button.button {
 .footer-link__list {
     position: relative;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 9px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -1041,11 +1047,15 @@ button.button {
 
 .footer-link__item {
     margin-right: 38px;
-    margin-bottom: 9px;
+    margin-bottom: 3px;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-link__item:nth-child(3) {
+    margin-right: 44px;
 }
 
 .footer-link__item:first-child {
@@ -1066,18 +1076,23 @@ button.button {
 .footer-link__list .footer-link__item:nth-child(1)::before {
     content: url("../img/heart.svg");
     position: absolute;
+    left: -13px;
     top: 3px;
-    left: 0;
     width: 13px;
     height: 13px;
 }
 
+.footer-copyright__link {
+    height: 39px;
+    width: 108px;
+}
+
 .footer-copyright__text {
     margin: 0;
-    margin-top: 8px;
+    margin-top: 2px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 18px;
 }
 
 .footer-copyright__text a {
