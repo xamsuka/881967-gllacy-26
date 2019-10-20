@@ -27,7 +27,7 @@
           </div>
           <nav class="header__menu">
             <ul class="main-nav">
-              <li class="main-nav__item">
+              <li class="main-nav__item" tabindex="0">
                 <a href="catalog.html" class="main-nav__link">Каталог</a>
                 <ul class="sub-menu">
                   <li class="sub-menu__item">
@@ -47,10 +47,10 @@
                   </li>
                 </ul>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item" tabindex="0">
                 <a href="#" class="main-nav__link">Доставка и оплата</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item" tabindex="0">
                 <a href="#" class="main-nav__link">О Компании</a>
               </li>
             </ul>
@@ -116,8 +116,8 @@
               </section>
             </li>
             <li class="header-button__item button-basket">
-              <a href="#" class="button-basket__link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+              <a href="#" class="button-basket__link basket-empty">
+                <svg class="button-basket__empty" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
                   <g fill="#FFF">
                     <path
                       d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
@@ -248,9 +248,9 @@
                     <img src="img/ice-cream-1.png" width="267" height="267"
                       alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   </a>
-                  <p class="product-item__price">
-                    <span class="price-gold">310</span><img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span
-                      class="price-unit">/кг</span>
+                  <p class="product-item__price price">
+                    <span class="price__gold">310</span>
+                    <span class="price__unit"><span class="price__ruble">₽</span>/кг</span>
                   </p>
                 </div>
 
@@ -267,9 +267,9 @@
                     <img src="img/ice-cream-2.png" width="267" height="267"
                       alt="Сливочно-кофейное с кусочками шоколада">
                   </a>
-                  <p class="product-item__price">
-                    <span class="price-gold">380</span><img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span
-                      class="price-unit">/кг</span>
+                  <p class="product-item__price price">
+                    <span class="price__gold">380</span>
+                    <span class="price__unit"><span class="price__ruble">₽</span>/кг</span>
                   </p>
                 </div>
 
@@ -287,9 +287,9 @@
                     <img src="img/ice-cream-3.png" width="267" height="267"
                       alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   </a>
-                  <p class="product-item__price">
-                    <span class="price-gold">355</span><img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span
-                      class="price-unit">/кг</span>
+                  <p class="product-item__price price">
+                    <span class="price__gold">355</span>
+                    <span class="price__unit"><span class="price__ruble">₽</span>/кг</span>
                   </p>
                 </div>
                 <h3 class="product-item__title product-title">
@@ -306,9 +306,9 @@
                     <img src="img/ice-cream-4.png" width="267" height="267"
                       alt="Сливочное крем-брюле с карамельной подливкой">
                   </a>
-                  <p class="product-item__price">
-                    <span class="price-gold">415</span><img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span
-                      class="price-unit">/кг</span>
+                  <p class="product-item__price price">
+                    <span class="price__gold">415</span>
+                    <span class="price__unit"><span class="price__ruble">₽</span>/кг</span>
                   </p>
                 </div>
                 <h3 class="product-item__title product-title">
@@ -397,7 +397,8 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571149069939!5m2!1sru!2sru"
           class="map__frame" allowfullscreen=""></iframe>
-        <div class="map__block">
+        <div class="container">
+          <div class="map__block">
             <div class="map__contact-block map-contact">
               <div class="map-contact__info">
                 <p class="map-contact__address">
@@ -415,6 +416,7 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
 
     </main>
@@ -476,30 +478,30 @@
           </div>
         </div>
       </div>
-      
+
     </footer>
   </div>
   <section class="feedback">
-      <h2 class="feedback__header visually-hidden">Обратная связь</h2>
-      <form class="feedback-form" action="#" method="POST">
-        <div class="feedback-form__content">
-          <p class="feedback-form__text">Мы обязательно вам ответим!</p>
-          <label for="user-name" class="visually-hidden">Ваше имя</label>
-          <input type="text" class="feedback-form__input input" name="feedback-name" id="user-name"
-            placeholder="Как вас зовут?">
+    <h2 class="feedback__header visually-hidden">Обратная связь</h2>
+    <form class="feedback-form" action="#" method="POST">
+      <div class="feedback-form__content">
+        <p class="feedback-form__text">Мы обязательно вам ответим!</p>
+        <label for="user-name" class="visually-hidden">Ваше имя</label>
+        <input type="text" class="feedback-form__input input" name="feedback-name" id="user-name"
+          placeholder="Как вас зовут?">
 
-          <label for="user-email" class="visually-hidden">Ваша почта</label>
-          <input type="email" class="feedback-form__input input" name="feedback-email" id="user-email"
-            placeholder="Ваша почта для ответа?">
+        <label for="user-email" class="visually-hidden">Ваша почта</label>
+        <input type="email" class="feedback-form__input input" name="feedback-email" id="user-email"
+          placeholder="Ваша почта для ответа?">
 
-          <label for="user-comment" class="visually-hidden">Комментарий</label>
-          <textarea class="feedback-form__area input" name="comment" id="user-comment"
-            placeholder="Напишите что-нибудь..."></textarea>
-          <button type="submit" class="button feedback-form__button">Отправить</button>
-        </div>
-        <button class="feedback-form__close" type="button">Закрыть</button>
-      </form>
-    </section>
+        <label for="user-comment" class="visually-hidden">Комментарий</label>
+        <textarea class="feedback-form__area input" name="comment" id="user-comment"
+          placeholder="Напишите что-нибудь..."></textarea>
+        <button type="submit" class="button feedback-form__button">Отправить</button>
+      </div>
+      <button class="feedback-form__close" type="button">Закрыть</button>
+    </form>
+  </section>
 
   <script src="js/script.js"></script>
 </body>

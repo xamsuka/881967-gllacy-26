@@ -131,6 +131,20 @@ button.button {
 
 .main-nav__item {
     display: inline-block;
+    border-radius: 25px;
+    padding: 7px 14px;
+}
+
+.main-nav__item:hover,
+.main-nav__item:focus {
+    background: rgba(255, 255, 255, 1);
+    
+}
+
+.main-nav__item:hover .main-nav__link,
+.main-nav__item:focus .main-nav__link{
+    color: #323232;
+    border-bottom: none;
 }
 
 .main-nav__item:hover .sub-menu,
@@ -149,22 +163,20 @@ button.button {
 .main-nav__link {
     display: block;
     position: relative;
-    padding: 7px 14px;
-    border-radius: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.main-nav__link.current {
+.main-nav__item.current {
     background-color: #d07058;
     color: #ffffff;
+    border: none;
 }
 
-.main-nav__link:hover,
-.main-nav__link:focus {
-    background: rgba(255, 255, 255, 1);
-    color: #323232;
+.main-nav__item.current a {
+    border: none;
 }
 
-.main-nav__link:active {
+.main-nav__item:active {
     box-shadow: inset 0 2px 1px #696969;
     background-color: #f8f7f4;
 }
@@ -185,7 +197,8 @@ button.button {
 .sub-menu {
     display: none;
     position: absolute;
-    margin-top: 5px;
+    top: 38px;
+    left: 0;
     padding: 0;
     min-width: 143px;
     list-style: none;
@@ -314,10 +327,10 @@ button.button {
 .button-search__link:focus path,
 .button-login__link:hover path,
 .button-login__link:focus path,
-.button-basket__link:hover path,
-.button-basket__link:focus path,
-.button-basket__link:hover circle,
-.button-basket__link:focus circle {
+.basket-empty:hover path,
+.basket-empty:focus path,
+.basket-empty:hover circle,
+.basket-empty:focus circle {
     fill:#323232;
 }
 
@@ -500,7 +513,7 @@ button.button {
 
 .slider {
     position: relative;
-    padding-top: 273px;
+    padding-top: 274px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -613,7 +626,7 @@ button.button {
 
 .banners__title {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     font-size: 35px;
     line-height: 41px;
 }
@@ -676,6 +689,10 @@ button.button {
     background-color: rgba(248, 247, 244,0.2);  
 }
 
+.product-item:hover {
+    z-index: 2;
+}
+
 .product-item > div {
     position: absolute;
     box-sizing: border-box;
@@ -695,18 +712,22 @@ button.button {
 
 .product-item__price {
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     left: 0;   
     margin: 0;
     line-height: 45px;
     text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.price-gold {
+.price__gold{
     font-size: 45px;
 }
 
-.price-unit {
+.price__ruble {
+    font-size: 45px;
+}
+
+.price__unit {
     font-size: 30px;
 }
 
@@ -717,19 +738,21 @@ button.button {
     padding: 0;
     margin: 0;
     padding-top: 40px;
-    padding-bottom: 40px;
     list-style: none;
+}
+
+.product-item__link {
+    display: block;
 }
 
 .product-item__title {
     margin: 0;
-    padding-left: 7px;
-    padding-right: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
     color: #ffffff;
     font-weight: 500;
     text-align: center;
 }
-
 
 .product-title__link {
     color: #ffffff;
@@ -761,7 +784,8 @@ button.button {
     max-width: 267px;
     height: 266px;
     border-radius: 50%;
-    margin-bottom: 13px;   
+    margin-bottom: 12px;   
+
 }
 
 .catalog-hit .product-item__image::before {
@@ -770,6 +794,7 @@ button.button {
     height: 61px;
     position: absolute;
     top: 0px;
+    left: 0;
 }
 
 .about-us {
@@ -921,7 +946,7 @@ button.button {
     height: 1px;
     position: absolute;
     top: 60px;
-    right: 102px;
+    /* right: 102px; */
     width: 1146px;
     margin-left: auto;
 }
@@ -1179,11 +1204,28 @@ button.button {
 .pagination-list {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 0;
     margin: 0;
+    padding-top: 40px;
     padding-bottom: 30px;
     list-style: none; 
+    font-size: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pagination-list__prev a,
+.pagination-list__next a {
+    align-self: center;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url("../img/icon-right-small.svg") no-repeat right center;
+}
+
+.pagination-list__prev {
+    transform: rotate(180deg);
+    opacity: 0.5;
 }
 
 .pagination-list__item {
@@ -1191,9 +1233,10 @@ button.button {
     position: relative;
     width: 26px;
     height: 26px;
-    margin-right: 5px;
+    margin-right: 3px;
     text-align: center;
     line-height: 27px;
+    font-size: 16px;
     border-radius: 50%;
     font-weight: 500;
 }
@@ -1271,9 +1314,9 @@ input[type="image"] {
     width: 11px;
     height: 11px;
     top: 9px;
-    right: 10px;
+    right: 5px;
     vertical-align: middle;
-    background: url(../img/select-arrow.svg) no-repeat center center;
+    background: url(../img/icon-down-dir.svg) no-repeat center center;
 }
 
 .filter-range {
