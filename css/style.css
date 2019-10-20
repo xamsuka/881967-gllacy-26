@@ -1624,6 +1624,7 @@ sort-additive {
 
 .feedback-form__input {
     width: 267px;
+    color: #323232;
     box-sizing: border-box;
     border: 1px solid rgba(178, 178, 178, 0.52);
 }
@@ -1640,6 +1641,10 @@ sort-additive {
 .feedback-form__input:hover,
 .feedback-form__input:focus {
     border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.feedback-form__input:valid {
+    font-weight: 700;
 }
 
 .display-none {
