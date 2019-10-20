@@ -48,6 +48,7 @@ input[type="radio"].visually-hidden {
     min-width: 1200px;
     background: url("../img/bg-green.png") no-repeat top center;
     transition: background-image 0.5s ease, background-color 0.5s ease;
+    -moz-transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
