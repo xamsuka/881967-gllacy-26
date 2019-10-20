@@ -162,8 +162,8 @@ button.button {
 
 .main-nav__link {
     display: block;
-    position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
 }
 
 .main-nav__item.current {
@@ -421,8 +421,9 @@ button.button {
 }
 
 .basket-form__list {
+    width: 100%;
+    text-align: left;
     border-bottom: 1px solid #cacac7;
-    text-align: start;
 }
 
 .basket-form__item {
@@ -436,29 +437,13 @@ button.button {
 }
 
 .basket-item__remove {
-    position: relative;
     width: 11px;
     height: 11px;
     margin-right: 9px;
-}
+} 
 
-.basket-item__remove::before,
-.basket-item__remove::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 7px;
-    height: 11px;
-    width: 1px;
-    background: #323232;
-}
-
-.basket-item__remove::before {
-    transform: rotate(45deg);
-}
-
-.basket-item__remove::after {
-    transform: rotate(-45deg);
+.basket-form__item td {
+    display: block;
 }
 
 .basket-item__image {
@@ -467,7 +452,7 @@ button.button {
 
 .basket-item__title {
     margin-right: 32px;
-    max-width: 214px;
+    max-width: 217px;
 }
 
 .basket-item__price {
@@ -826,13 +811,14 @@ button.button {
     margin-right: 34px;
 }
 
-.about-us__item:nth-child(2n) {
-    margin-right: 0;
+.about-us__image {
+    display: block;
+    min-width: 49px;
+    height: 49px;
 }
 
-.about-us__item img {
-    width: 49px;
-    height: 49px;
+.about-us__item:nth-child(2n) {
+    margin-right: 0;
 }
 
 .about-us__item-text {
@@ -1294,9 +1280,15 @@ button.button {
     width: 194px;
 }
 
+.sort-product,
+.filter-range,
+.fat {
+    padding-top: 2px;
+}
+
 .sort-product input {   
     padding: 10px 16px;
-    margin-top: 6px;
+    margin-top: 4px;
     width: 100%;
     box-sizing: border-box;
     background-color: rgba(248, 247, 244,0.2);
@@ -1391,11 +1383,12 @@ input[type="image"] {
 
 .fat-content label {
     position: relative;
+    display: inline-block;
     padding-left: 32px;
     margin-right: 18px;
     vertical-align: middle;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 22px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -1430,11 +1423,8 @@ sort-additive {
     font-size: 0;
 }
 
-.sort-additive__content {
-    margin-top: 6px;
+.sort-additive__content label {
     display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
 }
 
 .sort-additive-title {
@@ -1442,10 +1432,12 @@ sort-additive {
 }
 
 .sort-additive__content {
+    display: inline-block;
+    vertical-align: middle;
     width: 703px;
-    margin-top: 6px;
+    margin-top: 4px;
     box-sizing: border-box;
-    padding: 8px 19px 8px 14px;
+    padding: 8px 18px 8px 16px;
     background-color: rgba(248, 247, 244,0.2);
     border-radius: 20px;
     font-size: 0;
@@ -1457,7 +1449,7 @@ sort-additive {
     margin-right: 21px;
     vertical-align: middle;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 20px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -1488,7 +1480,7 @@ sort-additive {
 
 .sort-form__button {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     margin-left: 10px;
     padding: 8px 27px 7px 27px;
     border: 2px solid #ffffff;
