@@ -1442,6 +1442,7 @@ sort-additive {
 }
 
 .sort-additive__content label {
+    display: inline-block;
     position: relative;
     padding-left: 32px;
     margin-right: 21px;
@@ -1457,6 +1458,8 @@ sort-additive {
 }
 
 .sort-additive__content label::before {
+    display: inline-block;
+    vertical-align: middle;
     position: absolute;
     content: "";
     width: 20px;
@@ -1478,9 +1481,12 @@ sort-additive {
 
 .sort-form__button {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     margin-left: 10px;
-    padding: 8px 27px 7px 27px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 27px;
+    padding-right: 26px;
     border: 2px solid #ffffff;
     background-color: rgba(248, 247, 244, 0.2);
     border-radius: 20px;
