@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -41,10 +42,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav__item">
+                        <li class="main-nav__item" tabindex="0">
                             <a href="#" class="main-nav__link">Доставка и оплата</a>
                         </li>
-                        <li class="main-nav__item">
+                        <li class="main-nav__item" tabindex="0">
                             <a href="#" class="main-nav__link">О Компании</a>
                         </li>
                     </ul>
@@ -92,7 +93,7 @@
                                     <p>
                                         <label for="user-login"
                                             class="login-form__title-login visually-hidden">Логин</label>
-                                        <input type="text" class="login-form__input input" id="user-login" name="login"
+                                            <input type="text" class="login-form__input input" id="user-login" name="modal-login"
                                             placeholder="email@example.com">
                                     </p>
                                     <p>
@@ -253,7 +254,8 @@
                                     <h3 class="sort-form__title sort-additive-title">Наполнители:</h3>
                                     <div class="sort-additive__content">
                                         <input class="visually-hidden sort-additive__input" type="checkbox"
-                                            id="filter-chocolate-ice-cream" name="chocolate-ice-cream" value="a" checked>
+                                            id="filter-chocolate-ice-cream" name="chocolate-ice-cream" value="a"
+                                            checked>
                                         <label for="filter-chocolate-ice-cream">шоколадные</label>
 
                                         <input class="visually-hidden sort-additive__input" type="checkbox"
@@ -593,8 +595,29 @@
             </div>
         </div>
     </footer>
+    <section class="feedback">
+        <h2 class="feedback__header visually-hidden">Обратная связь</h2>
+        <form class="feedback-form" action="#" method="POST">
+            <div class="feedback-form__content">
+                <p class="feedback-form__text">Мы обязательно вам ответим!</p>
+                <label for="user-name" class="visually-hidden">Ваше имя</label>
+                <input type="text" class="feedback-form__input input" name="feedback-name" id="user-name"
+                    placeholder="Как вас зовут?">
 
-    <script src="js/script.js"></script>
+                <label for="user-email" class="visually-hidden">Ваша почта</label>
+                <input type="email" class="feedback-form__input input" name="feedback-email" id="user-email"
+                    placeholder="Ваша почта для ответа?">
+
+                <label for="user-comment" class="visually-hidden">Комментарий</label>
+                <textarea class="feedback-form__area input" name="comment" id="user-comment"
+                    placeholder="Напишите что-нибудь..."></textarea>
+                <button type="submit" class="button feedback-form__button">Отправить</button>
+            </div>
+            <button class="feedback-form__close" type="button">Закрыть</button>
+        </form>
+    </section>
+
+    <script src="js/script-catalog.min.js"></script>
 </body>
 
 </html>

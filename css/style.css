@@ -132,6 +132,7 @@ button.button {
 
 .main-nav__item {
     display: inline-block;
+    vertical-align: middle;
     border-radius: 25px;
     padding: 7px 14px;
 }
@@ -604,11 +605,11 @@ button.button {
 }
 
 .banners__item:nth-child(1) {
-    background: url("../img/bg-banners-raspberry.png") no-repeat;
+    background: #323232 url("../img/bg-banners-raspberry.png") no-repeat;
 }
 
 .banners__item:nth-child(2) {
-    background: url("../img/bg-banners-chocolate.png") no-repeat;
+    background: #323232 url("../img/bg-banners-chocolate.png") no-repeat;
 }
 
 .banners__title {
@@ -791,7 +792,7 @@ button.button {
     padding-bottom: 13px;
     border-radius: 15px;
     color: #323232;
-    background: url("../img/bg-wafer.jpg");
+    background: #ffffff url("../img/bg-wafer.jpg");
 }
 
 .about-us__header {
@@ -848,7 +849,7 @@ button.button {
     padding-bottom: 80px;
     box-sizing: border-box;
     border-radius: 13px;
-    background: url("../img/bg-post.png") no-repeat;
+    background: #ffffff url("../img/bg-post.png") no-repeat;
     color: #323232;
 }
 
@@ -919,6 +920,7 @@ button.button {
 }
 
 .map {
+    background: url("../img/map.png") no-repeat center center;
     width: 100%;
     max-height: 430px;
     position: relative;
@@ -1022,10 +1024,10 @@ button.button {
 
 .footer-social__item  {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 11px;
     width: 32px;
     height: 32px;  
-    
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
 }
@@ -1206,11 +1208,12 @@ button.button {
 
 .pagination-list__prev {
     transform: rotate(180deg);
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .pagination-list__item {
     display: inline-block;
+    vertical-align: middle;
     position: relative;
     width: 26px;
     height: 26px;
@@ -1417,10 +1420,6 @@ input[type="image"] {
 
 sort-additive {
     font-size: 0;
-}
-
-.sort-additive__content label {
-    display: inline-block;
 }
 
 .sort-additive-title {
