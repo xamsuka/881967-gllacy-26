@@ -74,6 +74,7 @@ input[type="radio"].visually-hidden {
 
 .button {
     display: inline-block;
+    box-sizing: border-box;
     padding: 10px 20px;
     border-radius: 50px;
     vertical-align: middle;
@@ -267,6 +268,7 @@ button.button {
 
 .header-button__item {
     display: inline-block;
+    vertical-align: middle;
     margin-right: 10px;
 }
 
@@ -920,7 +922,7 @@ button.button {
 }
 
 .map {
-    background: url("../img/map.png") no-repeat center center;
+    background: #ffffff url("../img/map.png") no-repeat center center;
     width: 100%;
     max-height: 430px;
     position: relative;
@@ -1004,7 +1006,10 @@ button.button {
 }
 
 .map-contact-block__button {
+    box-sizing: border-box;
     width: 100%;
+    color: #ffffff;
+    padding: 10px 27px;
 }
 
 .page-footer {
@@ -1408,6 +1413,7 @@ input[type="image"] {
     left: 0;
     border: 4px solid #ffffff;
     border-radius: 50%;
+    opacity: 0.8;
 }
 
 .fat-content__input:checked + label::after {
@@ -1419,7 +1425,21 @@ input[type="image"] {
     left: 7px;
     background: #ffffff;
     border-radius: 50%;
+    opacity: 0.8;
 }
+
+
+.fat-content label:hover::before,
+.fat-content label:hover::after {
+    opacity: 1;
+}
+
+
+.fat-content__input:disabled + label::before,
+.fat-content__input:disabled + label::after {
+    opacity: 0.4;
+}
+
 
 sort-additive {
     font-size: 0;
@@ -1467,6 +1487,11 @@ sort-additive {
     top: 0;
     left: 0;
     background: url(../img/checkbox-off.svg) no-repeat center center;
+    opacity: 0.8;
+}
+
+.sort-additive__content label:hover::before {
+    opacity: 1;
 }
 
 .sort-additive__input:checked + label::before {
@@ -1477,6 +1502,10 @@ sort-additive {
     top: 0;
     left: 0;
     background: url(../img/checkbox-on.svg) no-repeat center center;
+}
+
+.sort-additive__input:disabled + label::before {
+    opacity: 0.4;
 }
 
 .sort-form__button {
