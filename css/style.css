@@ -939,13 +939,6 @@ button.button {
     margin-left: auto;
 }
 
-.map .container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-}
-
 .map img {
     width: 100%;
 }
@@ -1378,6 +1371,7 @@ input[type="image"] {
     box-sizing: border-box;
     margin-top: 6px;
     padding: 8px 14px;
+    padding-top: 7px;
     background-color: rgba(248, 247, 244,0.2);
     border-radius: 20px;
     font-size: 0;
@@ -1413,10 +1407,10 @@ input[type="image"] {
 .fat-content__input:checked + label::after {
     position: absolute;
     content: "";
-    width: 10px;
-    height: 10px;
-    top: 6px;
-    left: 6px;
+    width: 8px;
+    height: 8px;
+    top: 7px;
+    left: 7px;
     background: #ffffff;
     border-radius: 50%;
 }
